@@ -10,3 +10,7 @@ Library    DatabaseLibrary
 
 
 *** Test Cases ***
+
+TC1_Check GIT
+    Log    Hi    
+    Log To Console    Hi there...    
