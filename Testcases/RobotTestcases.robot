@@ -14,7 +14,7 @@ Resource    ../Resources/HomePage.resource
 
 MMT-FLIGHTS-TC-001   
     [Documentation]
-    ...    This Testcase Verify Radio button is available and label text of ONEWAY radio button is "ONEWAY".
+    ...    This Testcase Verify that Radio button is available and label text of ONEWAY radio button is "ONEWAY".
     
     Open MakemyTrip Application
     
@@ -27,5 +27,12 @@ MMT-FLIGHTS-TC-002
     [Documentation]
     ...    This Testcase Verify that ONEWAY radio button selectable and unselectable or not on clicking other radio buttons
         
-    Click on ONEWAY RadioBtn and unselect       
+    Click on ONEWAY RadioBtn and unselect      
+    
+
+MMT-FLIGHTS-TC-003
+    [Documentation]
+    ...    This Testcase Verify that if on clicking on the label text of ONEWAY, radio button value ONEWAY should be selected.
+   
+    Click on ONEWAY label 
       

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.2.2 (Python 3.9.7 on win32)" generated="20220727 14:33:52.270" rpa="false">
+<robot generator="Robot 3.2.2 (Python 3.9.7 on win32)" generated="20220727 14:57:31.776" rpa="false">
 <suite id="s1" name="RobotFramework MakeMyTrip" source="C:\Users\P1324386\eclipse-workspace\RobotFramework_MakeMyTrip">
 <suite id="s1-s1" name="Testcases" source="C:\Users\P1324386\eclipse-workspace\RobotFramework_MakeMyTrip\Testcases">
 <suite id="s1-s1-s1" name="RobotTestcases" source="C:\Users\P1324386\eclipse-workspace\RobotFramework_MakeMyTrip\Testcases\RobotTestcases.robot">
@@ -11,45 +11,45 @@
 <arg>Path</arg>
 <arg>${EXECDIR}${/}Drivers</arg>
 </arguments>
-<msg timestamp="20220727 14:33:53.678" level="INFO">Environment variable 'Path' set to value 'C:/Prasad/eclipse//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_16.0.1.v20210528-1205/jre/bin/server;C:/Prasad/eclipse//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_16.0.1.v20210528-1205/jre/bin;C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\ToscaCommander;;C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\Classic;C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\Classic\dll;C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\Classic\dll\GuptaEngine;C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\ToscaCommander;C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\Classic\dll\DelphiEngine;C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\Classic\dll\PBEngine;C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\Classic\dll\VBEngine;C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\Classic\dll\DotNetHooking;;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Azure Data Studio\bin;C:\Program Files\dotnet\;C:\Program Files\Java\jdk-11.0.12\bin;C:\Program Files\nodejs\;C:\Python\Scripts;C:\Program Files\Git\cmd;C:\Python\Scripts\;C:\Python\;C:\Users\P1324386\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Azure Data Studio\bin;C:\Users\P1324386\.dotnet\tools;C:\Users\P1324386\AppData\Roaming\npm;C:\Program Files\Git\cmd;;C:\Prasad\eclipse;;C:\Users\P1324386\eclipse-workspace\RobotFramework_MakeMyTrip\Drivers'.</msg>
-<status status="PASS" starttime="20220727 14:33:53.677" endtime="20220727 14:33:53.678"></status>
+<msg timestamp="20220727 14:57:33.164" level="INFO">Environment variable 'Path' set to value 'C:/Prasad/eclipse//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_16.0.1.v20210528-1205/jre/bin/server;C:/Prasad/eclipse//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_16.0.1.v20210528-1205/jre/bin;C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\ToscaCommander;;C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\Classic;C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\Classic\dll;C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\Classic\dll\GuptaEngine;C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\ToscaCommander;C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\Classic\dll\DelphiEngine;C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\Classic\dll\PBEngine;C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\Classic\dll\VBEngine;C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\Classic\dll\DotNetHooking;;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Azure Data Studio\bin;C:\Program Files\dotnet\;C:\Program Files\Java\jdk-11.0.12\bin;C:\Program Files\nodejs\;C:\Python\Scripts;C:\Program Files\Git\cmd;C:\Python\Scripts\;C:\Python\;C:\Users\P1324386\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Azure Data Studio\bin;C:\Users\P1324386\.dotnet\tools;C:\Users\P1324386\AppData\Roaming\npm;C:\Program Files\Git\cmd;;C:\Prasad\eclipse;;C:\Users\P1324386\eclipse-workspace\RobotFramework_MakeMyTrip\Drivers'.</msg>
+<status status="PASS" starttime="20220727 14:57:33.163" endtime="20220727 14:57:33.164"></status>
 </kw>
 <kw name="Open Browser" library="SeleniumLibrary">
 <doc>Opens a new browser instance to the optional ``url``.</doc>
 <arguments>
 <arg>browser=${BROWSER}</arg>
 </arguments>
-<msg timestamp="20220727 14:33:53.678" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
-<status status="PASS" starttime="20220727 14:33:53.678" endtime="20220727 14:33:55.693"></status>
+<msg timestamp="20220727 14:57:33.164" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20220727 14:57:33.164" endtime="20220727 14:57:34.966"></status>
 </kw>
 <kw name="Go To" library="SeleniumLibrary">
 <doc>Navigates the current browser window to the provided ``url``.</doc>
 <arguments>
 <arg>${URL}</arg>
 </arguments>
-<msg timestamp="20220727 14:33:55.694" level="INFO">Opening url 'https://www.makemytrip.com/'</msg>
-<status status="PASS" starttime="20220727 14:33:55.694" endtime="20220727 14:34:03.032"></status>
+<msg timestamp="20220727 14:57:34.967" level="INFO">Opening url 'https://www.makemytrip.com/'</msg>
+<status status="PASS" starttime="20220727 14:57:34.966" endtime="20220727 14:57:42.435"></status>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220727 14:34:03.032" endtime="20220727 14:34:03.149"></status>
+<status status="PASS" starttime="20220727 14:57:42.435" endtime="20220727 14:57:42.830"></status>
 </kw>
 <kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
 <doc>Sets the implicit wait value used by Selenium.</doc>
 <arguments>
 <arg>30s</arg>
 </arguments>
-<status status="PASS" starttime="20220727 14:34:03.149" endtime="20220727 14:34:03.151"></status>
+<status status="PASS" starttime="20220727 14:57:42.831" endtime="20220727 14:57:42.832"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2s</arg>
 </arguments>
-<msg timestamp="20220727 14:34:05.161" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20220727 14:34:03.151" endtime="20220727 14:34:05.161"></status>
+<msg timestamp="20220727 14:57:44.837" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220727 14:57:42.833" endtime="20220727 14:57:44.838"></status>
 </kw>
-<status status="PASS" starttime="20220727 14:33:53.677" endtime="20220727 14:34:05.161"></status>
+<status status="PASS" starttime="20220727 14:57:33.163" endtime="20220727 14:57:44.839"></status>
 </kw>
 <kw name="Run Keyword And Ignore Error" library="BuiltIn">
 <doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
@@ -62,52 +62,52 @@
 <arguments>
 <arg>${NotificationFrame_Xpath}</arg>
 </arguments>
-<msg timestamp="20220727 14:34:05.164" level="INFO">Selecting frame '//iframe[contains(@title,'notification')]'.</msg>
-<status status="PASS" starttime="20220727 14:34:05.164" endtime="20220727 14:34:05.190"></status>
+<msg timestamp="20220727 14:57:44.841" level="INFO">Selecting frame '//iframe[contains(@title,'notification')]'.</msg>
+<status status="PASS" starttime="20220727 14:57:44.841" endtime="20220727 14:57:44.889"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${Close_Notification_Xpath}</arg>
 </arguments>
-<msg timestamp="20220727 14:34:05.190" level="INFO">Clicking element '//a[@class='close']'.</msg>
-<status status="PASS" starttime="20220727 14:34:05.190" endtime="20220727 14:34:05.258"></status>
+<msg timestamp="20220727 14:57:44.890" level="INFO">Clicking element '//a[@class='close']'.</msg>
+<status status="PASS" starttime="20220727 14:57:44.890" endtime="20220727 14:57:44.955"></status>
 </kw>
 <kw name="Unselect Frame" library="SeleniumLibrary">
 <doc>Sets the main frame as the current frame.</doc>
-<status status="PASS" starttime="20220727 14:34:05.258" endtime="20220727 14:34:05.261"></status>
+<status status="PASS" starttime="20220727 14:57:44.956" endtime="20220727 14:57:44.958"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2s</arg>
 </arguments>
-<msg timestamp="20220727 14:34:07.263" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20220727 14:34:05.261" endtime="20220727 14:34:07.264"></status>
+<msg timestamp="20220727 14:57:46.967" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220727 14:57:44.958" endtime="20220727 14:57:46.967"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${LangCardClose_Xpath}</arg>
 </arguments>
-<msg timestamp="20220727 14:34:07.267" level="INFO">Clicking element '//span[@class='langCardClose']'.</msg>
-<status status="PASS" starttime="20220727 14:34:07.265" endtime="20220727 14:34:07.345"></status>
+<msg timestamp="20220727 14:57:46.968" level="INFO">Clicking element '//span[@class='langCardClose']'.</msg>
+<status status="PASS" starttime="20220727 14:57:46.968" endtime="20220727 14:57:47.049"></status>
 </kw>
-<status status="PASS" starttime="20220727 14:34:05.164" endtime="20220727 14:34:07.345"></status>
+<status status="PASS" starttime="20220727 14:57:44.840" endtime="20220727 14:57:47.050"></status>
 </kw>
-<status status="PASS" starttime="20220727 14:34:05.161" endtime="20220727 14:34:07.346"></status>
+<status status="PASS" starttime="20220727 14:57:44.839" endtime="20220727 14:57:47.050"></status>
 </kw>
 <kw name="Verify ONEWAY label" library="HomePage">
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of the element identified by ``locator``.</doc>
 <arguments>
-<arg>//li[@data-cy='oneWayTrip']</arg>
+<arg>${OneWayLabel_Xpath}</arg>
 </arguments>
 <assign>
 <var>${OneWayTrip}</var>
 </assign>
-<msg timestamp="20220727 14:34:07.365" level="INFO">${OneWayTrip} = ONEWAY</msg>
-<status status="PASS" starttime="20220727 14:34:07.346" endtime="20220727 14:34:07.365"></status>
+<msg timestamp="20220727 14:57:47.070" level="INFO">${OneWayTrip} = ONEWAY</msg>
+<status status="PASS" starttime="20220727 14:57:47.050" endtime="20220727 14:57:47.070"></status>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <doc>Fails if the given objects are unequal.</doc>
@@ -115,11 +115,12 @@
 <arg>${OneWayTrip}</arg>
 <arg>ONEWAY</arg>
 </arguments>
-<status status="PASS" starttime="20220727 14:34:07.366" endtime="20220727 14:34:07.366"></status>
+<status status="PASS" starttime="20220727 14:57:47.070" endtime="20220727 14:57:47.071"></status>
 </kw>
-<status status="PASS" starttime="20220727 14:34:07.346" endtime="20220727 14:34:07.366"></status>
+<status status="PASS" starttime="20220727 14:57:47.050" endtime="20220727 14:57:47.071"></status>
 </kw>
-<status status="PASS" starttime="20220727 14:33:53.676" endtime="20220727 14:34:07.366" critical="yes"></status>
+<doc>This Testcase Verify Radio button is available and label text of ONEWAY radio button is "ONEWAY".</doc>
+<status status="PASS" starttime="20220727 14:57:33.162" endtime="20220727 14:57:47.071" critical="yes"></status>
 </test>
 <test id="s1-s1-s1-t2" name="MMT-FLIGHTS-TC-002">
 <kw name="Click on ONEWAY RadioBtn and unselect" library="HomePage">
@@ -128,16 +129,16 @@
 <arguments>
 <arg>${RoundTripRadioBtn_Xpath}</arg>
 </arguments>
-<msg timestamp="20220727 14:34:07.370" level="INFO">Clicking element '(//span[contains(@class,'tabsCircle')])[2]'.</msg>
-<status status="PASS" starttime="20220727 14:34:07.369" endtime="20220727 14:34:07.460"></status>
+<msg timestamp="20220727 14:57:47.074" level="INFO">Clicking element '(//span[contains(@class,'tabsCircle')])[2]'.</msg>
+<status status="PASS" starttime="20220727 14:57:47.073" endtime="20220727 14:57:47.161"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${OneWayRadioBtn_Xpath}</arg>
 </arguments>
-<msg timestamp="20220727 14:34:07.461" level="INFO">Clicking element '(//span[contains(@class,'tabsCircle')])[1]'.</msg>
-<status status="PASS" starttime="20220727 14:34:07.461" endtime="20220727 14:34:07.541"></status>
+<msg timestamp="20220727 14:57:47.162" level="INFO">Clicking element '(//span[contains(@class,'tabsCircle')])[1]'.</msg>
+<status status="PASS" starttime="20220727 14:57:47.161" endtime="20220727 14:57:47.249"></status>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of the element identified by ``locator``.</doc>
@@ -147,8 +148,8 @@
 <assign>
 <var>${OneWayTrip}</var>
 </assign>
-<msg timestamp="20220727 14:34:07.559" level="INFO">${OneWayTrip} = ONEWAY</msg>
-<status status="PASS" starttime="20220727 14:34:07.541" endtime="20220727 14:34:07.560"></status>
+<msg timestamp="20220727 14:57:47.269" level="INFO">${OneWayTrip} = ONEWAY</msg>
+<status status="PASS" starttime="20220727 14:57:47.249" endtime="20220727 14:57:47.269"></status>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <doc>Fails if the given objects are unequal.</doc>
@@ -156,29 +157,79 @@
 <arg>${OneWayTrip}</arg>
 <arg>ONEWAY</arg>
 </arguments>
-<status status="PASS" starttime="20220727 14:34:07.560" endtime="20220727 14:34:07.560"></status>
+<status status="PASS" starttime="20220727 14:57:47.269" endtime="20220727 14:57:47.270"></status>
 </kw>
-<status status="PASS" starttime="20220727 14:34:07.369" endtime="20220727 14:34:07.561"></status>
+<status status="PASS" starttime="20220727 14:57:47.073" endtime="20220727 14:57:47.270"></status>
 </kw>
-<status status="PASS" starttime="20220727 14:34:07.367" endtime="20220727 14:34:07.561" critical="yes"></status>
+<doc>This Testcase Verify that ONEWAY radio button selectable and unselectable or not on clicking other radio buttons</doc>
+<status status="PASS" starttime="20220727 14:57:47.072" endtime="20220727 14:57:47.270" critical="yes"></status>
 </test>
-<status status="PASS" starttime="20220727 14:33:52.349" endtime="20220727 14:34:07.562"></status>
+<test id="s1-s1-s1-t3" name="MMT-FLIGHTS-TC-003">
+<kw name="Click on ONEWAY label" library="HomePage">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${RoundTripRadioBtn_Xpath}</arg>
+</arguments>
+<msg timestamp="20220727 14:57:47.272" level="INFO">Clicking element '(//span[contains(@class,'tabsCircle')])[2]'.</msg>
+<status status="PASS" starttime="20220727 14:57:47.271" endtime="20220727 14:57:47.358"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20220727 14:57:48.369" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220727 14:57:47.359" endtime="20220727 14:57:48.369"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${OneWayLabel_Xpath}</arg>
+</arguments>
+<msg timestamp="20220727 14:57:48.370" level="INFO">Clicking element '//li[@data-cy='oneWayTrip']'.</msg>
+<status status="PASS" starttime="20220727 14:57:48.370" endtime="20220727 14:57:48.465"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>${SelectedRadioButton_Xpath}</arg>
+</arguments>
+<assign>
+<var>${OneWayTrip}</var>
+</assign>
+<msg timestamp="20220727 14:57:48.480" level="INFO">${OneWayTrip} = ONEWAY</msg>
+<status status="PASS" starttime="20220727 14:57:48.465" endtime="20220727 14:57:48.480"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${OneWayTrip}</arg>
+<arg>ONEWAY</arg>
+</arguments>
+<status status="PASS" starttime="20220727 14:57:48.481" endtime="20220727 14:57:48.481"></status>
+</kw>
+<status status="PASS" starttime="20220727 14:57:47.271" endtime="20220727 14:57:48.482"></status>
+</kw>
+<status status="PASS" starttime="20220727 14:57:47.271" endtime="20220727 14:57:48.482" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20220727 14:57:31.845" endtime="20220727 14:57:48.483"></status>
 </suite>
-<status status="PASS" starttime="20220727 14:33:52.345" endtime="20220727 14:34:07.565"></status>
+<status status="PASS" starttime="20220727 14:57:31.843" endtime="20220727 14:57:48.487"></status>
 </suite>
-<status status="PASS" starttime="20220727 14:33:52.325" endtime="20220727 14:34:07.567"></status>
+<status status="PASS" starttime="20220727 14:57:31.820" endtime="20220727 14:57:48.490"></status>
 </suite>
 <statistics>
 <total>
-<stat pass="2" fail="0">Critical Tests</stat>
-<stat pass="2" fail="0">All Tests</stat>
+<stat pass="3" fail="0">Critical Tests</stat>
+<stat pass="3" fail="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="2" fail="0" id="s1" name="RobotFramework MakeMyTrip">RobotFramework MakeMyTrip</stat>
-<stat pass="2" fail="0" id="s1-s1" name="Testcases">RobotFramework MakeMyTrip.Testcases</stat>
-<stat pass="2" fail="0" id="s1-s1-s1" name="RobotTestcases">RobotFramework MakeMyTrip.Testcases.RobotTestcases</stat>
+<stat pass="3" fail="0" id="s1" name="RobotFramework MakeMyTrip">RobotFramework MakeMyTrip</stat>
+<stat pass="3" fail="0" id="s1-s1" name="Testcases">RobotFramework MakeMyTrip.Testcases</stat>
+<stat pass="3" fail="0" id="s1-s1-s1" name="RobotTestcases">RobotFramework MakeMyTrip.Testcases.RobotTestcases</stat>
 </suite>
 </statistics>
 <errors>

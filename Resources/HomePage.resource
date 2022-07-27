@@ -21,14 +21,25 @@ ${MutliCityRadioBtn_Xpath}    (//span[contains(@class,'tabsCircle')])[3]
 
 
 Verify ONEWAY label
-    ${OneWayTrip}    Get Text    //li[@data-cy='oneWayTrip']
+    ${OneWayTrip}    Get Text    ${OneWayLabel_Xpath}
     Should Be Equal    ${OneWayTrip}    ONEWAY
     
 
 Click on ONEWAY RadioBtn and unselect
     Click Element    ${RoundTripRadioBtn_Xpath} 
     Click Element    ${OneWayRadioBtn_Xpath}    
-    ${OneWayTrip}    Get Text    //li[@data-cy='oneWayTrip']   
+    ${OneWayTrip}    Get Text    ${SelectedRadioButton_Xpath}   
+    Should Be Equal    ${OneWayTrip}    ONEWAY
+    
+
+Click on ONEWAY label
+    Click Element    ${RoundTripRadioBtn_Xpath}
+    Sleep    1s    
+    Click Element    ${OneWayLabel_Xpath}
+    ${OneWayTrip}    Get Text    ${SelectedRadioButton_Xpath}   
+    Should Be Equal    ${OneWayTrip}    ONEWAY
+       
+    
     
 
 
