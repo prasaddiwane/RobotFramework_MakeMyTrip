@@ -6,11 +6,14 @@ Library    OperatingSystem
 Library    AutoItLibrary 
 Library    Excel.Files
 Library    DatabaseLibrary
-
+Resource    ../Resources/CommonFunctionalities.resource
 
 
 *** Test Cases ***
 
-TC1_Check GIT
-    Log    Hi    
-    Log To Console    Hi there...    
+TC1
+    
+    Open MakemyTrip Application
+    Run Keyword And Ignore Error    Handle Notification
+     
+     
