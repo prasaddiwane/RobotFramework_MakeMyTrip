@@ -25,14 +25,55 @@ MMT-FLIGHTS-TC-001
 
 MMT-FLIGHTS-TC-002
     [Documentation]
-    ...    This Testcase Verify that ONEWAY radio button selectable and unselectable or not on clicking other radio buttons
+    ...    This Testcase will Verify that ONEWAY radio button selectable and unselectable or not on clicking other radio buttons
         
     Click on ONEWAY RadioBtn and unselect      
     
 
 MMT-FLIGHTS-TC-003
     [Documentation]
-    ...    This Testcase Verify that if on clicking on the label text of ONEWAY, radio button value ONEWAY should be selected.
+    ...    This Testcase will Verify that if on clicking on the label text of ONEWAY, radio button value ONEWAY should be selected.
    
     Click on ONEWAY label 
-      
+    
+MMT-FLIGHTS-TC-004
+    [Documentation]
+    ...    This Testcase will Verify that User should able to see "Tap to add a return date for bigger discounts" label under RETURN.
+    
+    Verify RETURN default Message for ONEWAY
+    
+MMT-FLIGHTS-TC-005
+    [Documentation]
+    ...    This Testcase will Verify that If the radio button selectable and unselectable or not on clicking all radio buttons
+    
+    Verify ROUNDTRIP Radio button
+    
+MMT-FLIGHTS-TC-006
+    [Documentation]
+    ...    This Testcase will Verify that If the radio button selectable and unselectable or not on clicking all radio buttons
+
+    Click on ROUNDTRIP and Unselect
+    
+MMT-FLIGHTS-TC-007
+    [Documentation]
+    ...    This Testcase will Verify that on clicking on the label text, radio button value should be selected.
+    
+    Click on ROUNDTRIP Label
+    
+MMT-FLIGHTS-TC-008
+    [Documentation]
+    ...    This Testcase will Verify that For ROUNDTRIP Radio button, User should not able to see "Tap to add a return date for bigger discounts" label under RETURN.   
+
+    Verify RETURN default Message for ROUND TRIP   
+    
+MMT-FLIGHTS-TC-009
+    [Documentation]
+    ...    This Testcase will Verify that  Radio button is available and label text of MULTICITY radio button is "MULTICITY".
+    
+    Verify MULTI CITY Label
+    
+MMT-FLIGHTS-TC-010
+    [Documentation]
+    ...    This Testcase will Verify if the radio button selectable and unselectable or not on clicking on other radio buttons.( for MULTICITY)
+    
+    Click on MULTI CITY and Unselect
