@@ -9,6 +9,10 @@ Library    DatabaseLibrary
 Resource    ../Resources/CommonFunctionalities.resource
 Resource    ../Resources/HomePage.resource
 
+*** Variables ***
+${FROM_Indian_CITY}    Mumbai
+${TO_Indian_CITY}    Bengaluru
+
 
 *** Test Cases ***
 
@@ -133,7 +137,14 @@ MMT-FLIGHTS-TC-016
     #Click on FROM Button
     Verify FROM Placeholder
     
-    Verify FROM Search city    Mumbai
+    #Input FROM City
+    Verify FROM Search city    ${FROM_Indian_CITY}
+    
+    #Input TO CIty
+    Verify TO Search city    ${TO_Indian_CITY}
+   
+    DEPARTURE DATE
+    
     
     
     

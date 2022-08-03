@@ -6,6 +6,7 @@ Library    OperatingSystem
 Library    AutoItLibrary 
 Library    Excel.Files
 Library    DatabaseLibrary
+Library    String    
 
 
 *** Variables ***
@@ -20,13 +21,15 @@ ${ReturnDefaultText_Xpath}    //p[@data-cy='returnDefaultText']\
 
 ${FROM_Label_Xpath}    (//span[contains(@class,'lbl_input latoBold')])[1]
 ${FROM_City_Xpath}    //*[@id='fromCity']
+${TO_City_Xpath}    //*[@id='toCity']
 ${TO_Label_Xpath}    (//span[contains(@class,'lbl_input latoBold')])[2]
-${DEPARTURE_Xpath}    (//span[contains(@class,'lbl_input latoBold')])[3]
-${RETURN_Xpath}    (//span[contains(@class,'lbl_input latoBold')])[4]        
+${DEPARTURE_Label_Xpath}    (//span[contains(@class,'lbl_input latoBold')])[3]
+${RETURN_Label_Xpath}    (//span[contains(@class,'lbl_input latoBold')])[4]        
 ${TRAVELLERS&CLASS_Xpath}    (//span[contains(@class,'lbl_input latoBold')])[5]
 ${FROM_Placeholder_Xpath}    //input[@placeholder='From']
+${TO_Placeholder_Xpath}    //input[@placeholder='To']
 ${CityFromList_Xpath}    (//ul[@role='listbox']/li)[1]
-
+${CityTOList_Xpath}    (//ul[@role='listbox']/li)[1]    
 
 *** Keywords ***
 
@@ -131,6 +134,28 @@ Verify FROM Search city
     ${City}    Get Element Attribute    ${FROM_City_Xpath}    value
     Should Be Equal    ${City}    ${SearchedCity}    
      
+
+Verify TO Search city
+    [Arguments]    ${SearchedCity}
+    Set Local Variable    ${SearchedCity}    ${SearchedCity}
+    Input Text    ${TO_Placeholder_Xpath}    ${SearchedCity} 
+    Sleep    2s
+    Click Element    ${CityTOList_Xpath} 
+    sleep    2s
+    ${City}    Get Element Attribute    ${TO_City_Xpath}    value
+    Should Be Equal    ${City}    ${SearchedCity}
+    
+Click NextMOnth
+    Click Element    //span[@aria-label='Next Month']  
+    
+Click Date
+    Click Element    ((//div[@class='DayPicker-Month'])[2]//div[@class='DayPicker-Day'])[8]           
+    
+DEPARTURE DATE
+    Set Local Variable    ${InputMonthYear}    October 2022
+    ${MonthYear}    Get Text    (//div[@class='DayPicker-Caption'])[1] 
+    
+    Run Keyword If    "${MonthYear}"=="${InputMonthYear}"    Click Date    ELSE    Click NextMOnth         
  
 
 
