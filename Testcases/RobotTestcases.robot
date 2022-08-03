@@ -143,7 +143,7 @@ MMT-FLIGHTS-TC-016
     #Input TO CIty
     Verify TO Search city    ${TO_Indian_CITY}
    
-    DEPARTURE DATE
+    DEPARTURE DATE    October 2022    8
     
     
     

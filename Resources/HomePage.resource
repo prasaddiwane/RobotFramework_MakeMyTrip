@@ -147,15 +147,22 @@ Verify TO Search city
     
 Click NextMOnth
     Click Element    //span[@aria-label='Next Month']  
+    Sleep    5s    
     
 Click Date
-    Click Element    ((//div[@class='DayPicker-Month'])[2]//div[@class='DayPicker-Day'])[8]           
+    [Arguments]    ${Day}
+    Click Element    ((//div[@class='DayPicker-Month'])[1]//div[@class='DayPicker-Day'])[${Day}]           
     
 DEPARTURE DATE
-    Set Local Variable    ${InputMonthYear}    October 2022
-    ${MonthYear}    Get Text    (//div[@class='DayPicker-Caption'])[1] 
+    [Arguments]    ${MonthYear}    ${Day}
+    Set Local Variable    ${InputMonthYear}    ${MonthYear}
     
-    Run Keyword If    "${MonthYear}"=="${InputMonthYear}"    Click Date    ELSE    Click NextMOnth         
+    FOR    ${counter}    IN RANGE    0    999
+         ${MonthYearValue}    Get Text    (//div[@class='DayPicker-Caption'])[1]
+         Run Keyword If    "${InputMonthYear}"!="${MonthYearValue}"    Click NextMOnth    
+         Exit For Loop If    "${InputMonthYear}"=="${MonthYearValue}"
+    END  
+    Click Date    ${Day}      
  
 
 

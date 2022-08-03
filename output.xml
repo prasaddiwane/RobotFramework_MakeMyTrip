@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.2.2 (Python 3.9.7 on win32)" generated="20220803 21:46:50.082" rpa="false">
+<robot generator="Robot 3.2.2 (Python 3.9.7 on win32)" generated="20220803 22:23:38.014" rpa="false">
 <suite id="s1" name="RobotFramework MakeMyTrip" source="C:\Users\P1324386\eclipse-workspace\RobotFramework_MakeMyTrip">
 <suite id="s1-s1" name="Testcases" source="C:\Users\P1324386\eclipse-workspace\RobotFramework_MakeMyTrip\Testcases">
 <suite id="s1-s1-s1" name="RobotTestcases" source="C:\Users\P1324386\eclipse-workspace\RobotFramework_MakeMyTrip\Testcases\RobotTestcases.robot">
@@ -9,8 +9,8 @@
 <arguments>
 <arg>${TEST_NAME}</arg>
 </arguments>
-<msg timestamp="20220803 21:46:51.471" level="INFO">MMT-FLIGHTS-TC-016</msg>
-<status status="PASS" starttime="20220803 21:46:51.470" endtime="20220803 21:46:51.471"></status>
+<msg timestamp="20220803 22:23:39.318" level="INFO">MMT-FLIGHTS-TC-016</msg>
+<status status="PASS" starttime="20220803 22:23:39.317" endtime="20220803 22:23:39.318"></status>
 </kw>
 <kw name="Open MakemyTrip Application" library="CommonFunctionalities">
 <kw name="Append To Environment Variable" library="OperatingSystem">
@@ -19,37 +19,37 @@
 <arg>Path</arg>
 <arg>${EXECDIR}${/}Drivers</arg>
 </arguments>
-<msg timestamp="20220803 21:46:51.471" level="INFO">Environment variable 'Path' set to value 'C:/Prasad/eclipse//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_16.0.1.v20210528-1205/jre/bin/server;C:/Prasad/eclipse//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_16.0.1.v20210528-1205/jre/bin;C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\ToscaCommander;;C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\Classic;C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\Classic\dll;C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\Classic\dll\GuptaEngine;C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\ToscaCommander;C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\Classic\dll\DelphiEngine;C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\Classic\dll\PBEngine;C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\Classic\dll\VBEngine;C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\Classic\dll\DotNetHooking;;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Azure Data Studio\bin;C:\Program Files\dotnet\;C:\Program Files\Java\jdk-11.0.12\bin;C:\Program Files\nodejs\;C:\Python\Scripts;C:\Program Files\Git\cmd;C:\Python\Scripts\;C:\Python\;C:\Users\P1324386\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Azure Data Studio\bin;C:\Users\P1324386\.dotnet\tools;C:\Users\P1324386\AppData\Roaming\npm;C:\Program Files\Git\cmd;;C:\Prasad\eclipse;;C:\Users\P1324386\eclipse-workspace\RobotFramework_MakeMyTrip\Drivers'.</msg>
-<status status="PASS" starttime="20220803 21:46:51.471" endtime="20220803 21:46:51.471"></status>
+<msg timestamp="20220803 22:23:39.319" level="INFO">Environment variable 'Path' set to value 'C:/Prasad/eclipse//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_16.0.1.v20210528-1205/jre/bin/server;C:/Prasad/eclipse//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_16.0.1.v20210528-1205/jre/bin;C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\ToscaCommander;;C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\Classic;C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\Classic\dll;C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\Classic\dll\GuptaEngine;C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\ToscaCommander;C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\Classic\dll\DelphiEngine;C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\Classic\dll\PBEngine;C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\Classic\dll\VBEngine;C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\Classic\dll\DotNetHooking;;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Azure Data Studio\bin;C:\Program Files\dotnet\;C:\Program Files\Java\jdk-11.0.12\bin;C:\Program Files\nodejs\;C:\Python\Scripts;C:\Program Files\Git\cmd;C:\Python\Scripts\;C:\Python\;C:\Users\P1324386\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Azure Data Studio\bin;C:\Users\P1324386\.dotnet\tools;C:\Users\P1324386\AppData\Roaming\npm;C:\Program Files\Git\cmd;;C:\Prasad\eclipse;;C:\Users\P1324386\eclipse-workspace\RobotFramework_MakeMyTrip\Drivers'.</msg>
+<status status="PASS" starttime="20220803 22:23:39.318" endtime="20220803 22:23:39.319"></status>
 </kw>
 <kw name="Open Browser" library="SeleniumLibrary">
 <doc>Opens a new browser instance to the optional ``url``.</doc>
 <arguments>
 <arg>browser=${BROWSER}</arg>
 </arguments>
-<msg timestamp="20220803 21:46:51.472" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
-<status status="PASS" starttime="20220803 21:46:51.472" endtime="20220803 21:46:53.508"></status>
+<msg timestamp="20220803 22:23:39.319" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20220803 22:23:39.319" endtime="20220803 22:23:41.120"></status>
 </kw>
 <kw name="Go To" library="SeleniumLibrary">
 <doc>Navigates the current browser window to the provided ``url``.</doc>
 <arguments>
 <arg>${URL}</arg>
 </arguments>
-<msg timestamp="20220803 21:46:53.509" level="INFO">Opening url 'https://www.makemytrip.com/'</msg>
-<status status="PASS" starttime="20220803 21:46:53.508" endtime="20220803 21:47:09.956"></status>
+<msg timestamp="20220803 22:23:41.121" level="INFO">Opening url 'https://www.makemytrip.com/'</msg>
+<status status="PASS" starttime="20220803 22:23:41.121" endtime="20220803 22:24:15.654"></status>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220803 21:47:09.956" endtime="20220803 21:47:10.076"></status>
+<status status="PASS" starttime="20220803 22:24:15.654" endtime="20220803 22:24:15.782"></status>
 </kw>
 <kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
 <doc>Sets the implicit wait value used by Selenium.</doc>
 <arguments>
 <arg>5</arg>
 </arguments>
-<status status="PASS" starttime="20220803 21:47:10.076" endtime="20220803 21:47:10.078"></status>
+<status status="PASS" starttime="20220803 22:24:15.783" endtime="20220803 22:24:15.788"></status>
 </kw>
-<status status="PASS" starttime="20220803 21:46:51.471" endtime="20220803 21:47:10.079"></status>
+<status status="PASS" starttime="20220803 22:23:39.318" endtime="20220803 22:24:15.789"></status>
 </kw>
 <kw name="Run Keyword And Ignore Error" library="BuiltIn">
 <doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
@@ -62,18 +62,18 @@
 <arguments>
 <arg>${NotificationFrame_Xpath}</arg>
 </arguments>
-<msg timestamp="20220803 21:47:10.083" level="INFO">Selecting frame '//iframe[contains(@title,'notification')]'.</msg>
+<msg timestamp="20220803 22:24:15.793" level="INFO">Selecting frame '//iframe[contains(@title,'notification')]'.</msg>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20220803 21:47:15.320" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-13.png"&gt;&lt;img src="selenium-screenshot-13.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20220803 21:47:15.146" endtime="20220803 21:47:15.321"></status>
+<msg timestamp="20220803 22:24:20.956" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-22.png"&gt;&lt;img src="selenium-screenshot-22.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220803 22:24:20.801" endtime="20220803 22:24:20.956"></status>
 </kw>
-<msg timestamp="20220803 21:47:15.324" level="FAIL">Element with locator '//iframe[contains(@title,'notification')]' not found.</msg>
-<status status="FAIL" starttime="20220803 21:47:10.082" endtime="20220803 21:47:15.324"></status>
+<msg timestamp="20220803 22:24:20.961" level="FAIL">Element with locator '//iframe[contains(@title,'notification')]' not found.</msg>
+<status status="FAIL" starttime="20220803 22:24:15.792" endtime="20220803 22:24:20.962"></status>
 </kw>
-<status status="FAIL" starttime="20220803 21:47:10.081" endtime="20220803 21:47:15.325"></status>
+<status status="FAIL" starttime="20220803 22:24:15.791" endtime="20220803 22:24:20.962"></status>
 </kw>
-<status status="PASS" starttime="20220803 21:47:10.080" endtime="20220803 21:47:15.325"></status>
+<status status="PASS" starttime="20220803 22:24:15.790" endtime="20220803 22:24:20.962"></status>
 </kw>
 <kw name="Handle Language Notification" library="CommonFunctionalities">
 <kw name="Click Element" library="SeleniumLibrary">
@@ -81,10 +81,10 @@
 <arguments>
 <arg>${LangCardClose_Xpath}</arg>
 </arguments>
-<msg timestamp="20220803 21:47:15.326" level="INFO">Clicking element '//span[@class='langCardClose']'.</msg>
-<status status="PASS" starttime="20220803 21:47:15.325" endtime="20220803 21:47:15.405"></status>
+<msg timestamp="20220803 22:24:20.963" level="INFO">Clicking element '//span[@class='langCardClose']'.</msg>
+<status status="PASS" starttime="20220803 22:24:20.963" endtime="20220803 22:24:21.048"></status>
 </kw>
-<status status="PASS" starttime="20220803 21:47:15.325" endtime="20220803 21:47:15.406"></status>
+<status status="PASS" starttime="20220803 22:24:20.963" endtime="20220803 22:24:21.048"></status>
 </kw>
 <kw name="Click on ONEWAY label" library="HomePage">
 <kw name="Click Element" library="SeleniumLibrary">
@@ -92,24 +92,24 @@
 <arguments>
 <arg>${RoundTripRadioBtn_Xpath}</arg>
 </arguments>
-<msg timestamp="20220803 21:47:15.407" level="INFO">Clicking element '(//span[contains(@class,'tabsCircle')])[2]'.</msg>
-<status status="PASS" starttime="20220803 21:47:15.407" endtime="20220803 21:47:15.508"></status>
+<msg timestamp="20220803 22:24:21.049" level="INFO">Clicking element '(//span[contains(@class,'tabsCircle')])[2]'.</msg>
+<status status="PASS" starttime="20220803 22:24:21.049" endtime="20220803 22:24:21.150"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>1s</arg>
 </arguments>
-<msg timestamp="20220803 21:47:16.525" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20220803 21:47:15.508" endtime="20220803 21:47:16.525"></status>
+<msg timestamp="20220803 22:24:22.154" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220803 22:24:21.150" endtime="20220803 22:24:22.154"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${OneWayLabel_Xpath}</arg>
 </arguments>
-<msg timestamp="20220803 21:47:16.525" level="INFO">Clicking element '//li[@data-cy='oneWayTrip']'.</msg>
-<status status="PASS" starttime="20220803 21:47:16.525" endtime="20220803 21:47:16.621"></status>
+<msg timestamp="20220803 22:24:22.155" level="INFO">Clicking element '//li[@data-cy='oneWayTrip']'.</msg>
+<status status="PASS" starttime="20220803 22:24:22.154" endtime="20220803 22:24:22.238"></status>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of the element identified by ``locator``.</doc>
@@ -119,8 +119,8 @@
 <assign>
 <var>${OneWayTrip}</var>
 </assign>
-<msg timestamp="20220803 21:47:16.643" level="INFO">${OneWayTrip} = ONEWAY</msg>
-<status status="PASS" starttime="20220803 21:47:16.622" endtime="20220803 21:47:16.643"></status>
+<msg timestamp="20220803 22:24:22.263" level="INFO">${OneWayTrip} = ONEWAY</msg>
+<status status="PASS" starttime="20220803 22:24:22.238" endtime="20220803 22:24:22.263"></status>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <doc>Fails if the given objects are unequal.</doc>
@@ -128,9 +128,9 @@
 <arg>${OneWayTrip}</arg>
 <arg>ONEWAY</arg>
 </arguments>
-<status status="PASS" starttime="20220803 21:47:16.643" endtime="20220803 21:47:16.644"></status>
+<status status="PASS" starttime="20220803 22:24:22.264" endtime="20220803 22:24:22.264"></status>
 </kw>
-<status status="PASS" starttime="20220803 21:47:15.406" endtime="20220803 21:47:16.644"></status>
+<status status="PASS" starttime="20220803 22:24:21.049" endtime="20220803 22:24:22.267"></status>
 </kw>
 <kw name="Verify FROM Placeholder" library="HomePage">
 <kw name="Click Element" library="SeleniumLibrary">
@@ -138,16 +138,16 @@
 <arguments>
 <arg>${FROM_Label_Xpath}</arg>
 </arguments>
-<msg timestamp="20220803 21:47:16.645" level="INFO">Clicking element '(//span[contains(@class,'lbl_input latoBold')])[1]'.</msg>
-<status status="PASS" starttime="20220803 21:47:16.645" endtime="20220803 21:47:16.796"></status>
+<msg timestamp="20220803 22:24:22.268" level="INFO">Clicking element '(//span[contains(@class,'lbl_input latoBold')])[1]'.</msg>
+<status status="PASS" starttime="20220803 22:24:22.268" endtime="20220803 22:24:22.421"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2s</arg>
 </arguments>
-<msg timestamp="20220803 21:47:18.811" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20220803 21:47:16.796" endtime="20220803 21:47:18.811"></status>
+<msg timestamp="20220803 22:24:24.430" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220803 22:24:22.422" endtime="20220803 22:24:24.431"></status>
 </kw>
 <kw name="Get Element Attribute" library="SeleniumLibrary">
 <doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
@@ -158,8 +158,8 @@
 <assign>
 <var>${FROM_Placeholder}</var>
 </assign>
-<msg timestamp="20220803 21:47:18.830" level="INFO">${FROM_Placeholder} = From</msg>
-<status status="PASS" starttime="20220803 21:47:18.814" endtime="20220803 21:47:18.831"></status>
+<msg timestamp="20220803 22:24:24.459" level="INFO">${FROM_Placeholder} = From</msg>
+<status status="PASS" starttime="20220803 22:24:24.431" endtime="20220803 22:24:24.460"></status>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <doc>Fails if the given objects are unequal.</doc>
@@ -167,9 +167,9 @@
 <arg>${FROM_Placeholder}</arg>
 <arg>From</arg>
 </arguments>
-<status status="PASS" starttime="20220803 21:47:18.831" endtime="20220803 21:47:18.831"></status>
+<status status="PASS" starttime="20220803 22:24:24.460" endtime="20220803 22:24:24.460"></status>
 </kw>
-<status status="PASS" starttime="20220803 21:47:16.644" endtime="20220803 21:47:18.831"></status>
+<status status="PASS" starttime="20220803 22:24:22.267" endtime="20220803 22:24:24.461"></status>
 </kw>
 <kw name="Verify FROM Search city" library="HomePage">
 <arguments>
@@ -181,8 +181,8 @@
 <arg>${SearchedCity}</arg>
 <arg>${SearchedCity}</arg>
 </arguments>
-<msg timestamp="20220803 21:47:18.833" level="INFO">${SearchedCity} = Mumbai</msg>
-<status status="PASS" starttime="20220803 21:47:18.832" endtime="20220803 21:47:18.833"></status>
+<msg timestamp="20220803 22:24:24.462" level="INFO">${SearchedCity} = Mumbai</msg>
+<status status="PASS" starttime="20220803 22:24:24.462" endtime="20220803 22:24:24.462"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -190,32 +190,32 @@
 <arg>${FROM_Placeholder_Xpath}</arg>
 <arg>${SearchedCity}</arg>
 </arguments>
-<msg timestamp="20220803 21:47:18.833" level="INFO">Typing text 'Mumbai' into text field '//input[@placeholder='From']'.</msg>
-<status status="PASS" starttime="20220803 21:47:18.833" endtime="20220803 21:47:18.912"></status>
+<msg timestamp="20220803 22:24:24.463" level="INFO">Typing text 'Mumbai' into text field '//input[@placeholder='From']'.</msg>
+<status status="PASS" starttime="20220803 22:24:24.463" endtime="20220803 22:24:24.541"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2s</arg>
 </arguments>
-<msg timestamp="20220803 21:47:20.928" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20220803 21:47:18.912" endtime="20220803 21:47:20.929"></status>
+<msg timestamp="20220803 22:24:26.549" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220803 22:24:24.542" endtime="20220803 22:24:26.549"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${CityFromList_Xpath}</arg>
 </arguments>
-<msg timestamp="20220803 21:47:20.930" level="INFO">Clicking element '(//ul[@role='listbox']/li)[1]'.</msg>
-<status status="PASS" starttime="20220803 21:47:20.929" endtime="20220803 21:47:21.050"></status>
+<msg timestamp="20220803 22:24:26.551" level="INFO">Clicking element '(//ul[@role='listbox']/li)[1]'.</msg>
+<status status="PASS" starttime="20220803 22:24:26.550" endtime="20220803 22:24:26.663"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2s</arg>
 </arguments>
-<msg timestamp="20220803 21:47:23.056" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20220803 21:47:21.051" endtime="20220803 21:47:23.057"></status>
+<msg timestamp="20220803 22:24:28.670" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220803 22:24:26.665" endtime="20220803 22:24:28.671"></status>
 </kw>
 <kw name="Get Element Attribute" library="SeleniumLibrary">
 <doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
@@ -226,8 +226,8 @@
 <assign>
 <var>${City}</var>
 </assign>
-<msg timestamp="20220803 21:47:23.079" level="INFO">${City} = Mumbai</msg>
-<status status="PASS" starttime="20220803 21:47:23.057" endtime="20220803 21:47:23.079"></status>
+<msg timestamp="20220803 22:24:28.708" level="INFO">${City} = Mumbai</msg>
+<status status="PASS" starttime="20220803 22:24:28.672" endtime="20220803 22:24:28.708"></status>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <doc>Fails if the given objects are unequal.</doc>
@@ -235,9 +235,9 @@
 <arg>${City}</arg>
 <arg>${SearchedCity}</arg>
 </arguments>
-<status status="PASS" starttime="20220803 21:47:23.079" endtime="20220803 21:47:23.080"></status>
+<status status="PASS" starttime="20220803 22:24:28.708" endtime="20220803 22:24:28.708"></status>
 </kw>
-<status status="PASS" starttime="20220803 21:47:18.832" endtime="20220803 21:47:23.080"></status>
+<status status="PASS" starttime="20220803 22:24:24.461" endtime="20220803 22:24:28.709"></status>
 </kw>
 <kw name="Verify TO Search city" library="HomePage">
 <arguments>
@@ -249,8 +249,8 @@
 <arg>${SearchedCity}</arg>
 <arg>${SearchedCity}</arg>
 </arguments>
-<msg timestamp="20220803 21:47:23.081" level="INFO">${SearchedCity} = Bengaluru</msg>
-<status status="PASS" starttime="20220803 21:47:23.081" endtime="20220803 21:47:23.081"></status>
+<msg timestamp="20220803 22:24:28.710" level="INFO">${SearchedCity} = Bengaluru</msg>
+<status status="PASS" starttime="20220803 22:24:28.709" endtime="20220803 22:24:28.710"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -258,32 +258,32 @@
 <arg>${TO_Placeholder_Xpath}</arg>
 <arg>${SearchedCity}</arg>
 </arguments>
-<msg timestamp="20220803 21:47:23.082" level="INFO">Typing text 'Bengaluru' into text field '//input[@placeholder='To']'.</msg>
-<status status="PASS" starttime="20220803 21:47:23.081" endtime="20220803 21:47:23.178"></status>
+<msg timestamp="20220803 22:24:28.710" level="INFO">Typing text 'Bengaluru' into text field '//input[@placeholder='To']'.</msg>
+<status status="PASS" starttime="20220803 22:24:28.710" endtime="20220803 22:24:28.793"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2s</arg>
 </arguments>
-<msg timestamp="20220803 21:47:25.183" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20220803 21:47:23.178" endtime="20220803 21:47:25.183"></status>
+<msg timestamp="20220803 22:24:30.806" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220803 22:24:28.793" endtime="20220803 22:24:30.806"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${CityTOList_Xpath}</arg>
 </arguments>
-<msg timestamp="20220803 21:47:25.184" level="INFO">Clicking element '(//ul[@role='listbox']/li)[1]'.</msg>
-<status status="PASS" starttime="20220803 21:47:25.184" endtime="20220803 21:47:25.259"></status>
+<msg timestamp="20220803 22:24:30.810" level="INFO">Clicking element '(//ul[@role='listbox']/li)[1]'.</msg>
+<status status="PASS" starttime="20220803 22:24:30.808" endtime="20220803 22:24:30.925"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2s</arg>
 </arguments>
-<msg timestamp="20220803 21:47:27.259" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20220803 21:47:25.259" endtime="20220803 21:47:27.259"></status>
+<msg timestamp="20220803 22:24:32.932" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220803 22:24:30.926" endtime="20220803 22:24:32.932"></status>
 </kw>
 <kw name="Get Element Attribute" library="SeleniumLibrary">
 <doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
@@ -294,8 +294,8 @@
 <assign>
 <var>${City}</var>
 </assign>
-<msg timestamp="20220803 21:47:27.283" level="INFO">${City} = Bengaluru</msg>
-<status status="PASS" starttime="20220803 21:47:27.260" endtime="20220803 21:47:27.283"></status>
+<msg timestamp="20220803 22:24:32.953" level="INFO">${City} = Bengaluru</msg>
+<status status="PASS" starttime="20220803 22:24:32.933" endtime="20220803 22:24:32.953"></status>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <doc>Fails if the given objects are unequal.</doc>
@@ -303,37 +303,41 @@
 <arg>${City}</arg>
 <arg>${SearchedCity}</arg>
 </arguments>
-<status status="PASS" starttime="20220803 21:47:27.284" endtime="20220803 21:47:27.284"></status>
+<status status="PASS" starttime="20220803 22:24:32.954" endtime="20220803 22:24:32.954"></status>
 </kw>
-<status status="PASS" starttime="20220803 21:47:23.080" endtime="20220803 21:47:27.284"></status>
+<status status="PASS" starttime="20220803 22:24:28.709" endtime="20220803 22:24:32.955"></status>
 </kw>
 <kw name="DEPARTURE DATE" library="HomePage">
+<arguments>
+<arg>October 2022</arg>
+<arg>8</arg>
+</arguments>
 <kw name="Set Local Variable" library="BuiltIn">
 <doc>Makes a variable available everywhere within the local scope.</doc>
 <arguments>
 <arg>${InputMonthYear}</arg>
-<arg>October 2022</arg>
+<arg>${MonthYear}</arg>
 </arguments>
-<msg timestamp="20220803 21:47:27.286" level="INFO">${InputMonthYear} = October 2022</msg>
-<status status="PASS" starttime="20220803 21:47:27.285" endtime="20220803 21:47:27.286"></status>
+<msg timestamp="20220803 22:24:32.957" level="INFO">${InputMonthYear} = October 2022</msg>
+<status status="PASS" starttime="20220803 22:24:32.955" endtime="20220803 22:24:32.957"></status>
 </kw>
+<kw name="${counter} IN RANGE [ 0 | 999 ]" type="for">
+<kw name="${counter} = 0" type="foritem">
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of the element identified by ``locator``.</doc>
 <arguments>
 <arg>(//div[@class='DayPicker-Caption'])[1]</arg>
 </arguments>
 <assign>
-<var>${MonthYear}</var>
+<var>${MonthYearValue}</var>
 </assign>
-<msg timestamp="20220803 21:47:27.311" level="INFO">${MonthYear} = August 2022</msg>
-<status status="PASS" starttime="20220803 21:47:27.287" endtime="20220803 21:47:27.311"></status>
+<msg timestamp="20220803 22:24:32.979" level="INFO">${MonthYearValue} = August 2022</msg>
+<status status="PASS" starttime="20220803 22:24:32.958" endtime="20220803 22:24:32.979"></status>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
 <arguments>
-<arg>"${MonthYear}"=="${InputMonthYear}"</arg>
-<arg>Click Date</arg>
-<arg>ELSE</arg>
+<arg>"${InputMonthYear}"!="${MonthYearValue}"</arg>
 <arg>Click NextMOnth</arg>
 </arguments>
 <kw name="Click NextMOnth" library="HomePage">
@@ -342,23 +346,134 @@
 <arguments>
 <arg>//span[@aria-label='Next Month']</arg>
 </arguments>
-<msg timestamp="20220803 21:47:27.312" level="INFO">Clicking element '//span[@aria-label='Next Month']'.</msg>
-<status status="PASS" starttime="20220803 21:47:27.312" endtime="20220803 21:47:27.381"></status>
+<msg timestamp="20220803 22:24:32.981" level="INFO">Clicking element '//span[@aria-label='Next Month']'.</msg>
+<status status="PASS" starttime="20220803 22:24:32.980" endtime="20220803 22:24:33.045"></status>
 </kw>
-<status status="PASS" starttime="20220803 21:47:27.312" endtime="20220803 21:47:27.382"></status>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20220803 22:24:38.059" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220803 22:24:33.046" endtime="20220803 22:24:38.060"></status>
 </kw>
-<status status="PASS" starttime="20220803 21:47:27.311" endtime="20220803 21:47:27.382"></status>
+<status status="PASS" starttime="20220803 22:24:32.980" endtime="20220803 22:24:38.060"></status>
 </kw>
-<status status="PASS" starttime="20220803 21:47:27.284" endtime="20220803 21:47:27.382"></status>
+<status status="PASS" starttime="20220803 22:24:32.980" endtime="20220803 22:24:38.061"></status>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<arguments>
+<arg>"${InputMonthYear}"=="${MonthYearValue}"</arg>
+</arguments>
+<status status="PASS" starttime="20220803 22:24:38.061" endtime="20220803 22:24:38.062"></status>
+</kw>
+<status status="PASS" starttime="20220803 22:24:32.958" endtime="20220803 22:24:38.062"></status>
+</kw>
+<kw name="${counter} = 1" type="foritem">
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>(//div[@class='DayPicker-Caption'])[1]</arg>
+</arguments>
+<assign>
+<var>${MonthYearValue}</var>
+</assign>
+<msg timestamp="20220803 22:24:38.082" level="INFO">${MonthYearValue} = September 2022</msg>
+<status status="PASS" starttime="20220803 22:24:38.063" endtime="20220803 22:24:38.083"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>"${InputMonthYear}"!="${MonthYearValue}"</arg>
+<arg>Click NextMOnth</arg>
+</arguments>
+<kw name="Click NextMOnth" library="HomePage">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//span[@aria-label='Next Month']</arg>
+</arguments>
+<msg timestamp="20220803 22:24:38.085" level="INFO">Clicking element '//span[@aria-label='Next Month']'.</msg>
+<status status="PASS" starttime="20220803 22:24:38.084" endtime="20220803 22:24:38.137"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20220803 22:24:43.140" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220803 22:24:38.138" endtime="20220803 22:24:43.141"></status>
+</kw>
+<status status="PASS" starttime="20220803 22:24:38.084" endtime="20220803 22:24:43.143"></status>
+</kw>
+<status status="PASS" starttime="20220803 22:24:38.083" endtime="20220803 22:24:43.143"></status>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<arguments>
+<arg>"${InputMonthYear}"=="${MonthYearValue}"</arg>
+</arguments>
+<status status="PASS" starttime="20220803 22:24:43.144" endtime="20220803 22:24:43.146"></status>
+</kw>
+<status status="PASS" starttime="20220803 22:24:38.062" endtime="20220803 22:24:43.146"></status>
+</kw>
+<kw name="${counter} = 2" type="foritem">
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>(//div[@class='DayPicker-Caption'])[1]</arg>
+</arguments>
+<assign>
+<var>${MonthYearValue}</var>
+</assign>
+<msg timestamp="20220803 22:24:43.177" level="INFO">${MonthYearValue} = October 2022</msg>
+<status status="PASS" starttime="20220803 22:24:43.148" endtime="20220803 22:24:43.177"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>"${InputMonthYear}"!="${MonthYearValue}"</arg>
+<arg>Click NextMOnth</arg>
+</arguments>
+<status status="PASS" starttime="20220803 22:24:43.177" endtime="20220803 22:24:43.178"></status>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<arguments>
+<arg>"${InputMonthYear}"=="${MonthYearValue}"</arg>
+</arguments>
+<msg timestamp="20220803 22:24:43.179" level="INFO">Exiting for loop altogether.</msg>
+<status status="PASS" starttime="20220803 22:24:43.178" endtime="20220803 22:24:43.179"></status>
+</kw>
+<status status="PASS" starttime="20220803 22:24:43.147" endtime="20220803 22:24:43.180"></status>
+</kw>
+<status status="PASS" starttime="20220803 22:24:32.957" endtime="20220803 22:24:43.180"></status>
+</kw>
+<kw name="Click Date" library="HomePage">
+<arguments>
+<arg>${Day}</arg>
+</arguments>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>((//div[@class='DayPicker-Month'])[1]//div[@class='DayPicker-Day'])[${Day}]</arg>
+</arguments>
+<msg timestamp="20220803 22:24:43.182" level="INFO">Clicking element '((//div[@class='DayPicker-Month'])[1]//div[@class='DayPicker-Day'])[8]'.</msg>
+<status status="PASS" starttime="20220803 22:24:43.181" endtime="20220803 22:24:43.255"></status>
+</kw>
+<status status="PASS" starttime="20220803 22:24:43.180" endtime="20220803 22:24:43.256"></status>
+</kw>
+<status status="PASS" starttime="20220803 22:24:32.955" endtime="20220803 22:24:43.256"></status>
 </kw>
 <doc>This Testcase will Verify that User is able to book Flights after giving required inputs.(FOR ONEWAY TRIP)</doc>
-<status status="PASS" starttime="20220803 21:46:51.469" endtime="20220803 21:47:27.382" critical="yes"></status>
+<status status="PASS" starttime="20220803 22:23:39.317" endtime="20220803 22:24:43.256" critical="yes"></status>
 </test>
-<status status="PASS" starttime="20220803 21:46:50.156" endtime="20220803 21:47:27.383"></status>
+<status status="PASS" starttime="20220803 22:23:38.084" endtime="20220803 22:24:43.257"></status>
 </suite>
-<status status="PASS" starttime="20220803 21:46:50.154" endtime="20220803 21:47:27.385"></status>
+<status status="PASS" starttime="20220803 22:23:38.081" endtime="20220803 22:24:43.260"></status>
 </suite>
-<status status="PASS" starttime="20220803 21:46:50.128" endtime="20220803 21:47:27.388"></status>
+<status status="PASS" starttime="20220803 22:23:38.062" endtime="20220803 22:24:43.261"></status>
 </suite>
 <statistics>
 <total>
