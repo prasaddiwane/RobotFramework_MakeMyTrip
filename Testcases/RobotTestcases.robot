@@ -20,6 +20,8 @@ MMT-FLIGHTS-TC-001
     
     Run Keyword And Ignore Error    Handle Notification
     
+    Handle Language Notification
+    
     Verify ONEWAY label
     
 
@@ -77,3 +79,66 @@ MMT-FLIGHTS-TC-010
     ...    This Testcase will Verify if the radio button selectable and unselectable or not on clicking on other radio buttons.( for MULTICITY)
     
     Click on MULTI CITY and Unselect
+    
+MMT-FLIGHTS-TC-011
+    [Documentation]
+    ...    This Testcase will Verify that on clicking on the label text, radio button value should be selected.
+    
+    Click on MULTICITY Label
+    
+MMT-FLIGHTS-TC-012
+    [Documentation]
+    ...    This Testcase will Verify 'FROM' combo box should be available on page.
+    Open MakemyTrip Application
+    
+    Run Keyword And Ignore Error    Handle Notification
+    
+    Handle Language Notification
+    
+    Verify FROM combobox
+    
+MMT-FLIGHTS-TC-013
+    [Documentation]
+    ...    This Testcase will Verify that 'FROM' placeholder is available  or not.
+    
+    Verify FROM Placeholder
+   
+MMT-FLIGHTS-TC-014
+    [Documentation]
+    ...    This Testcase will Verify that User is able to search City on Search Box(for FROM).
+    
+    Search FROM City
+
+MMT-FLIGHTS-TC-015
+    [Documentation]
+    ...    This Testcase will Verify that Searched City from Combo box and Selected City is same(for FROM).
+    
+    Verify FROM Search city    Mumbai
+    
+
+MMT-FLIGHTS-TC-016
+    [Documentation]
+    ...    This Testcase will Verify that User is able to book Flights after giving required inputs.(FOR ONEWAY TRIP)
+    
+    Log    ${TEST_NAME}
+    
+    Open MakemyTrip Application
+    
+    Run Keyword And Ignore Error    Handle Notification
+    
+    Handle Language Notification
+    
+    Click on ONEWAY label
+    
+    #Click on FROM Button
+    Verify FROM Placeholder
+    
+    Verify FROM Search city    Mumbai
+    
+    
+    
+    
+    
+    
+
+    

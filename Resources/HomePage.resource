@@ -16,8 +16,16 @@ ${MultiCityLabel_Xpath}    //li[@data-cy='mulitiCityTrip']
 ${OneWayRadioBtn_Xpath}    (//span[contains(@class,'tabsCircle')])[1]
 ${RoundTripRadioBtn_Xpath}    (//span[contains(@class,'tabsCircle')])[2]
 ${MutliCityRadioBtn_Xpath}    (//span[contains(@class,'tabsCircle')])[3]
-${ReturnDefaultText_Xpath}    //p[@data-cy='returnDefaultText']
+${ReturnDefaultText_Xpath}    //p[@data-cy='returnDefaultText']\
 
+${FROM_Label_Xpath}    (//span[contains(@class,'lbl_input latoBold')])[1]
+${FROM_City_Xpath}    //*[@id='fromCity']
+${TO_Label_Xpath}    (//span[contains(@class,'lbl_input latoBold')])[2]
+${DEPARTURE_Xpath}    (//span[contains(@class,'lbl_input latoBold')])[3]
+${RETURN_Xpath}    (//span[contains(@class,'lbl_input latoBold')])[4]        
+${TRAVELLERS&CLASS_Xpath}    (//span[contains(@class,'lbl_input latoBold')])[5]
+${FROM_Placeholder_Xpath}    //input[@placeholder='From']
+${CityFromList_Xpath}    (//ul[@role='listbox']/li)[1]
 
 
 *** Keywords ***
@@ -88,9 +96,45 @@ Click on MULTI CITY and Unselect
     Sleep    1s    
     ${RadioBtnLabel}    Get Text    ${SelectedRadioButton_Xpath}
     Should Not Be Equal    ${RadioBtnLabel}    MULTI CITY  
-    Close All Browsers
     
+Click on MULTICITY Label
+    Click Element    ${MultiCityLabel_Xpath}
+    Sleep    2s    
+    ${MultiCity}    Get Text    ${SelectedRadioButton_Xpath}
+    Should Be Equal    ${MultiCity}    MULTI CITY  
+    Close Browser   
+    
+Verify FROM combobox
+    ${FROM}    Get Text    ${FROM_Label_Xpath}
+    log    ${FROM} 
+    
+Verify FROM Placeholder 
+    Click Element    ${FROM_Label_Xpath}
+    Sleep    2s    
+    ${FROM_Placeholder}    Get Element Attribute    ${FROM_Placeholder_Xpath}    placeholder       
+    Should Be Equal    ${FROM_Placeholder}    From
+    
+    
+Search FROM City
+    Set Local Variable    ${SearchedCity}    Mumbai     
+    Input Text    ${FROM_Placeholder_Xpath}    ${SearchedCity}
+    sleep    3s
+    Element Attribute Value Should Be    ${FROM_Placeholder_Xpath}    value    ${SearchedCity}     
+    
+Verify FROM Search city
+    [Arguments]    ${SearchedCity}
+    Set Local Variable    ${SearchedCity}    ${SearchedCity}  
+    Input Text    ${FROM_Placeholder_Xpath}    ${SearchedCity}   
+    Sleep    2s    
+    Click Element    ${CityFromList_Xpath}    
+    sleep    2s
+    ${City}    Get Element Attribute    ${FROM_City_Xpath}    value
+    Should Be Equal    ${City}    ${SearchedCity}    
+     
+ 
 
+
+                     
     
 
         

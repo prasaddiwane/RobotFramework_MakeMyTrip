@@ -26,8 +26,7 @@ Open MakemyTrip Application
     Open Browser    browser=${BROWSER}
     Go To    ${URL}
     Maximize Browser Window
-    Set Selenium Implicit Wait    30s
-    sleep    2s
+    Set Selenium Implicit Wait    5
        
     
 Handle Notification
@@ -35,7 +34,12 @@ Handle Notification
     Click Element    ${Close_Notification_Xpath} 
     Unselect Frame
     sleep    2s
-    Click Element    ${LangCardClose_Xpath}
+    
+    
+Handle Language Notification
+    Click Element    ${LangCardClose_Xpath}    
+    
+
     
     
 
