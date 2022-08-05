@@ -147,7 +147,7 @@ Verify TO Search city
     
 Click NextMOnth
     Click Element    //span[@aria-label='Next Month']  
-    Sleep    5s    
+    Sleep    1s    
     
 Click Date
     [Arguments]    ${Day}
@@ -162,7 +162,12 @@ DEPARTURE DATE
          Run Keyword If    "${InputMonthYear}"!="${MonthYearValue}"    Click NextMOnth    
          Exit For Loop If    "${InputMonthYear}"=="${MonthYearValue}"
     END  
-    Click Date    ${Day}      
+    Click Date    ${Day} 
+    
+
+    
+    
+         
  
 
 

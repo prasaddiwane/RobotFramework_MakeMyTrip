@@ -12,7 +12,8 @@ Resource    ../Resources/HomePage.resource
 *** Variables ***
 ${FROM_Indian_CITY}    Mumbai
 ${TO_Indian_CITY}    Bengaluru
-
+${Departure_MonthYear}    December 2022
+${Departure_Date}    22
 
 *** Test Cases ***
 
@@ -143,10 +144,15 @@ MMT-FLIGHTS-TC-016
     #Input TO CIty
     Verify TO Search city    ${TO_Indian_CITY}
    
-    DEPARTURE DATE    October 2022    8
+    DEPARTURE DATE    ${Departure_MonthYear}    ${Departure_Date}
     
-    
-    
+
+TC_DEMO
+   
+    #${Departure_Date}    Convert To Integer    ${Departure_Date}      
+    Log    ${Departure_Date}        
+    ${Departure_Date}    Evaluate    ${Departure_Date}+1    
+    Log    ${Departure_Date}    
     
     
     
