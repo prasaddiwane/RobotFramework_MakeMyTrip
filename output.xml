@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.2.2 (Python 3.9.7 on win32)" generated="20220809 12:50:58.006" rpa="false">
+<robot generator="Robot 3.2.2 (Python 3.9.7 on win32)" generated="20220809 15:03:28.726" rpa="false">
 <suite id="s1" name="RobotFramework MakeMyTrip" source="C:\Users\P1324386\eclipse-workspace\RobotFramework_MakeMyTrip">
 <suite id="s1-s1" name="Testcases" source="C:\Users\P1324386\eclipse-workspace\RobotFramework_MakeMyTrip\Testcases">
 <suite id="s1-s1-s1" name="RobotTestcases" source="C:\Users\P1324386\eclipse-workspace\RobotFramework_MakeMyTrip\Testcases\RobotTestcases.robot">
@@ -9,8 +9,8 @@
 <arguments>
 <arg>${TEST_NAME}</arg>
 </arguments>
-<msg timestamp="20220809 12:50:59.342" level="INFO">MMT-FLIGHTS-TC-016</msg>
-<status status="PASS" starttime="20220809 12:50:59.341" endtime="20220809 12:50:59.343"></status>
+<msg timestamp="20220809 15:03:30.018" level="INFO">MMT-FLIGHTS-TC-016</msg>
+<status status="PASS" starttime="20220809 15:03:30.017" endtime="20220809 15:03:30.018"></status>
 </kw>
 <kw name="Open MakemyTrip Application" library="CommonFunctionalities">
 <kw name="Append To Environment Variable" library="OperatingSystem">
@@ -19,37 +19,37 @@
 <arg>Path</arg>
 <arg>${EXECDIR}${/}Drivers</arg>
 </arguments>
-<msg timestamp="20220809 12:50:59.343" level="INFO">Environment variable 'Path' set to value 'C:/Prasad/eclipse//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_16.0.1.v20210528-1205/jre/bin/server;C:/Prasad/eclipse//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_16.0.1.v20210528-1205/jre/bin;C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\ToscaCommander;;C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\Classic;C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\Classic\dll;C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\Classic\dll\GuptaEngine;C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\ToscaCommander;C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\Classic\dll\DelphiEngine;C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\Classic\dll\PBEngine;C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\Classic\dll\VBEngine;C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\Classic\dll\DotNetHooking;;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Azure Data Studio\bin;C:\Program Files\dotnet\;C:\Program Files\Java\jdk-11.0.12\bin;C:\Program Files\nodejs\;C:\Python\Scripts;C:\Program Files\Git\cmd;C:\Python\Scripts\;C:\Python\;C:\Users\P1324386\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Azure Data Studio\bin;C:\Users\P1324386\.dotnet\tools;C:\Users\P1324386\AppData\Roaming\npm;C:\Program Files\Git\cmd;;C:\Prasad\eclipse;;C:\Users\P1324386\eclipse-workspace\RobotFramework_MakeMyTrip\Drivers'.</msg>
-<status status="PASS" starttime="20220809 12:50:59.343" endtime="20220809 12:50:59.343"></status>
+<msg timestamp="20220809 15:03:30.018" level="INFO">Environment variable 'Path' set to value 'C:/Prasad/eclipse//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_16.0.1.v20210528-1205/jre/bin/server;C:/Prasad/eclipse//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_16.0.1.v20210528-1205/jre/bin;C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\ToscaCommander;;C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\Classic;C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\Classic\dll;C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\Classic\dll\GuptaEngine;C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\ToscaCommander;C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\Classic\dll\DelphiEngine;C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\Classic\dll\PBEngine;C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\Classic\dll\VBEngine;C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\Classic\dll\DotNetHooking;;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Azure Data Studio\bin;C:\Program Files\dotnet\;C:\Program Files\Java\jdk-11.0.12\bin;C:\Program Files\nodejs\;C:\Python\Scripts;C:\Program Files\Git\cmd;C:\Python\Scripts\;C:\Python\;C:\Users\P1324386\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Azure Data Studio\bin;C:\Users\P1324386\.dotnet\tools;C:\Users\P1324386\AppData\Roaming\npm;C:\Program Files\Git\cmd;;C:\Prasad\eclipse;;C:\Users\P1324386\eclipse-workspace\RobotFramework_MakeMyTrip\Drivers'.</msg>
+<status status="PASS" starttime="20220809 15:03:30.018" endtime="20220809 15:03:30.019"></status>
 </kw>
 <kw name="Open Browser" library="SeleniumLibrary">
 <doc>Opens a new browser instance to the optional ``url``.</doc>
 <arguments>
 <arg>browser=${BROWSER}</arg>
 </arguments>
-<msg timestamp="20220809 12:50:59.344" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
-<status status="PASS" starttime="20220809 12:50:59.344" endtime="20220809 12:51:01.076"></status>
+<msg timestamp="20220809 15:03:30.019" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20220809 15:03:30.019" endtime="20220809 15:03:31.579"></status>
 </kw>
 <kw name="Go To" library="SeleniumLibrary">
 <doc>Navigates the current browser window to the provided ``url``.</doc>
 <arguments>
 <arg>${URL}</arg>
 </arguments>
-<msg timestamp="20220809 12:51:01.078" level="INFO">Opening url 'https://www.makemytrip.com/'</msg>
-<status status="PASS" starttime="20220809 12:51:01.077" endtime="20220809 12:51:07.430"></status>
+<msg timestamp="20220809 15:03:31.580" level="INFO">Opening url 'https://www.makemytrip.com/'</msg>
+<status status="PASS" starttime="20220809 15:03:31.579" endtime="20220809 15:03:38.778"></status>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220809 12:51:07.431" endtime="20220809 12:51:07.553"></status>
+<status status="PASS" starttime="20220809 15:03:38.780" endtime="20220809 15:03:38.903"></status>
 </kw>
 <kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
 <doc>Sets the implicit wait value used by Selenium.</doc>
 <arguments>
 <arg>5</arg>
 </arguments>
-<status status="PASS" starttime="20220809 12:51:07.554" endtime="20220809 12:51:07.558"></status>
+<status status="PASS" starttime="20220809 15:03:38.903" endtime="20220809 15:03:38.905"></status>
 </kw>
-<status status="PASS" starttime="20220809 12:50:59.343" endtime="20220809 12:51:07.559"></status>
+<status status="PASS" starttime="20220809 15:03:30.018" endtime="20220809 15:03:38.905"></status>
 </kw>
 <kw name="Run Keyword And Ignore Error" library="BuiltIn">
 <doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
@@ -62,18 +62,18 @@
 <arguments>
 <arg>${NotificationFrame_Xpath}</arg>
 </arguments>
-<msg timestamp="20220809 12:51:07.562" level="INFO">Selecting frame '//iframe[contains(@title,'notification')]'.</msg>
+<msg timestamp="20220809 15:03:38.907" level="INFO">Selecting frame '//iframe[contains(@title,'notification')]'.</msg>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20220809 12:51:12.798" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20220809 12:51:12.620" endtime="20220809 12:51:12.798"></status>
+<msg timestamp="20220809 15:03:44.120" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-9.png"&gt;&lt;img src="selenium-screenshot-9.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220809 15:03:43.957" endtime="20220809 15:03:44.121"></status>
 </kw>
-<msg timestamp="20220809 12:51:12.802" level="FAIL">Element with locator '//iframe[contains(@title,'notification')]' not found.</msg>
-<status status="FAIL" starttime="20220809 12:51:07.562" endtime="20220809 12:51:12.803"></status>
+<msg timestamp="20220809 15:03:44.125" level="FAIL">Element with locator '//iframe[contains(@title,'notification')]' not found.</msg>
+<status status="FAIL" starttime="20220809 15:03:38.906" endtime="20220809 15:03:44.125"></status>
 </kw>
-<status status="FAIL" starttime="20220809 12:51:07.561" endtime="20220809 12:51:12.803"></status>
+<status status="FAIL" starttime="20220809 15:03:38.906" endtime="20220809 15:03:44.125"></status>
 </kw>
-<status status="PASS" starttime="20220809 12:51:07.560" endtime="20220809 12:51:12.803"></status>
+<status status="PASS" starttime="20220809 15:03:38.905" endtime="20220809 15:03:44.126"></status>
 </kw>
 <kw name="Handle Language Notification" library="CommonFunctionalities">
 <kw name="Click Element" library="SeleniumLibrary">
@@ -81,10 +81,10 @@
 <arguments>
 <arg>${LangCardClose_Xpath}</arg>
 </arguments>
-<msg timestamp="20220809 12:51:12.804" level="INFO">Clicking element '//span[@class='langCardClose']'.</msg>
-<status status="PASS" starttime="20220809 12:51:12.804" endtime="20220809 12:51:12.879"></status>
+<msg timestamp="20220809 15:03:44.127" level="INFO">Clicking element '//span[@class='langCardClose']'.</msg>
+<status status="PASS" starttime="20220809 15:03:44.126" endtime="20220809 15:03:44.219"></status>
 </kw>
-<status status="PASS" starttime="20220809 12:51:12.804" endtime="20220809 12:51:12.880"></status>
+<status status="PASS" starttime="20220809 15:03:44.126" endtime="20220809 15:03:44.219"></status>
 </kw>
 <kw name="Click on ONEWAY label" library="HomePage">
 <kw name="Click Element" library="SeleniumLibrary">
@@ -92,24 +92,24 @@
 <arguments>
 <arg>${RoundTripRadioBtn_Xpath}</arg>
 </arguments>
-<msg timestamp="20220809 12:51:12.881" level="INFO">Clicking element '(//span[contains(@class,'tabsCircle')])[2]'.</msg>
-<status status="PASS" starttime="20220809 12:51:12.880" endtime="20220809 12:51:12.975"></status>
+<msg timestamp="20220809 15:03:44.221" level="INFO">Clicking element '(//span[contains(@class,'tabsCircle')])[2]'.</msg>
+<status status="PASS" starttime="20220809 15:03:44.221" endtime="20220809 15:03:44.307"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>1s</arg>
 </arguments>
-<msg timestamp="20220809 12:51:13.983" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20220809 12:51:12.976" endtime="20220809 12:51:13.983"></status>
+<msg timestamp="20220809 15:03:45.320" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220809 15:03:44.307" endtime="20220809 15:03:45.320"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${OneWayLabel_Xpath}</arg>
 </arguments>
-<msg timestamp="20220809 12:51:13.984" level="INFO">Clicking element '//li[@data-cy='oneWayTrip']'.</msg>
-<status status="PASS" starttime="20220809 12:51:13.984" endtime="20220809 12:51:14.062"></status>
+<msg timestamp="20220809 15:03:45.321" level="INFO">Clicking element '//li[@data-cy='oneWayTrip']'.</msg>
+<status status="PASS" starttime="20220809 15:03:45.321" endtime="20220809 15:03:45.400"></status>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of the element identified by ``locator``.</doc>
@@ -119,8 +119,8 @@
 <assign>
 <var>${OneWayTrip}</var>
 </assign>
-<msg timestamp="20220809 12:51:14.084" level="INFO">${OneWayTrip} = ONEWAY</msg>
-<status status="PASS" starttime="20220809 12:51:14.063" endtime="20220809 12:51:14.084"></status>
+<msg timestamp="20220809 15:03:45.423" level="INFO">${OneWayTrip} = ONEWAY</msg>
+<status status="PASS" starttime="20220809 15:03:45.401" endtime="20220809 15:03:45.423"></status>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <doc>Fails if the given objects are unequal.</doc>
@@ -128,9 +128,9 @@
 <arg>${OneWayTrip}</arg>
 <arg>ONEWAY</arg>
 </arguments>
-<status status="PASS" starttime="20220809 12:51:14.084" endtime="20220809 12:51:14.084"></status>
+<status status="PASS" starttime="20220809 15:03:45.423" endtime="20220809 15:03:45.423"></status>
 </kw>
-<status status="PASS" starttime="20220809 12:51:12.880" endtime="20220809 12:51:14.085"></status>
+<status status="PASS" starttime="20220809 15:03:44.220" endtime="20220809 15:03:45.424"></status>
 </kw>
 <kw name="Verify FROM Placeholder" library="HomePage">
 <kw name="Click Element" library="SeleniumLibrary">
@@ -138,16 +138,16 @@
 <arguments>
 <arg>${FROM_Label_Xpath}</arg>
 </arguments>
-<msg timestamp="20220809 12:51:14.085" level="INFO">Clicking element '(//span[contains(@class,'lbl_input latoBold')])[1]'.</msg>
-<status status="PASS" starttime="20220809 12:51:14.085" endtime="20220809 12:51:14.231"></status>
+<msg timestamp="20220809 15:03:45.426" level="INFO">Clicking element '(//span[contains(@class,'lbl_input latoBold')])[1]'.</msg>
+<status status="PASS" starttime="20220809 15:03:45.424" endtime="20220809 15:03:45.569"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2s</arg>
 </arguments>
-<msg timestamp="20220809 12:51:16.234" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20220809 12:51:14.231" endtime="20220809 12:51:16.234"></status>
+<msg timestamp="20220809 15:03:47.580" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220809 15:03:45.570" endtime="20220809 15:03:47.581"></status>
 </kw>
 <kw name="Get Element Attribute" library="SeleniumLibrary">
 <doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
@@ -158,8 +158,8 @@
 <assign>
 <var>${FROM_Placeholder}</var>
 </assign>
-<msg timestamp="20220809 12:51:16.256" level="INFO">${FROM_Placeholder} = From</msg>
-<status status="PASS" starttime="20220809 12:51:16.234" endtime="20220809 12:51:16.256"></status>
+<msg timestamp="20220809 15:03:47.609" level="INFO">${FROM_Placeholder} = From</msg>
+<status status="PASS" starttime="20220809 15:03:47.582" endtime="20220809 15:03:47.609"></status>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <doc>Fails if the given objects are unequal.</doc>
@@ -167,9 +167,9 @@
 <arg>${FROM_Placeholder}</arg>
 <arg>From</arg>
 </arguments>
-<status status="PASS" starttime="20220809 12:51:16.257" endtime="20220809 12:51:16.257"></status>
+<status status="PASS" starttime="20220809 15:03:47.610" endtime="20220809 15:03:47.610"></status>
 </kw>
-<status status="PASS" starttime="20220809 12:51:14.085" endtime="20220809 12:51:16.257"></status>
+<status status="PASS" starttime="20220809 15:03:45.424" endtime="20220809 15:03:47.611"></status>
 </kw>
 <kw name="Verify FROM Search city" library="HomePage">
 <arguments>
@@ -181,8 +181,8 @@
 <arg>${SearchedCity}</arg>
 <arg>${SearchedCity}</arg>
 </arguments>
-<msg timestamp="20220809 12:51:16.259" level="INFO">${SearchedCity} = Mumbai</msg>
-<status status="PASS" starttime="20220809 12:51:16.258" endtime="20220809 12:51:16.259"></status>
+<msg timestamp="20220809 15:03:47.612" level="INFO">${SearchedCity} = Mumbai</msg>
+<status status="PASS" starttime="20220809 15:03:47.612" endtime="20220809 15:03:47.612"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -190,32 +190,32 @@
 <arg>${FROM_Placeholder_Xpath}</arg>
 <arg>${SearchedCity}</arg>
 </arguments>
-<msg timestamp="20220809 12:51:16.259" level="INFO">Typing text 'Mumbai' into text field '//input[@placeholder='From']'.</msg>
-<status status="PASS" starttime="20220809 12:51:16.259" endtime="20220809 12:51:16.329"></status>
+<msg timestamp="20220809 15:03:47.613" level="INFO">Typing text 'Mumbai' into text field '//input[@placeholder='From']'.</msg>
+<status status="PASS" starttime="20220809 15:03:47.613" endtime="20220809 15:03:47.684"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2s</arg>
 </arguments>
-<msg timestamp="20220809 12:51:18.342" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20220809 12:51:16.329" endtime="20220809 12:51:18.342"></status>
+<msg timestamp="20220809 15:03:49.687" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220809 15:03:47.684" endtime="20220809 15:03:49.688"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${CityFromList_Xpath}</arg>
 </arguments>
-<msg timestamp="20220809 12:51:18.344" level="INFO">Clicking element '(//ul[@role='listbox']/li)[1]'.</msg>
-<status status="PASS" starttime="20220809 12:51:18.343" endtime="20220809 12:51:18.442"></status>
+<msg timestamp="20220809 15:03:49.690" level="INFO">Clicking element '(//ul[@role='listbox']/li)[1]'.</msg>
+<status status="PASS" starttime="20220809 15:03:49.689" endtime="20220809 15:03:49.804"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2s</arg>
 </arguments>
-<msg timestamp="20220809 12:51:20.455" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20220809 12:51:18.443" endtime="20220809 12:51:20.455"></status>
+<msg timestamp="20220809 15:03:51.808" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220809 15:03:49.804" endtime="20220809 15:03:51.808"></status>
 </kw>
 <kw name="Get Element Attribute" library="SeleniumLibrary">
 <doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
@@ -226,8 +226,8 @@
 <assign>
 <var>${City}</var>
 </assign>
-<msg timestamp="20220809 12:51:20.493" level="INFO">${City} = Mumbai</msg>
-<status status="PASS" starttime="20220809 12:51:20.457" endtime="20220809 12:51:20.493"></status>
+<msg timestamp="20220809 15:03:51.834" level="INFO">${City} = Mumbai</msg>
+<status status="PASS" starttime="20220809 15:03:51.808" endtime="20220809 15:03:51.834"></status>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <doc>Fails if the given objects are unequal.</doc>
@@ -235,9 +235,9 @@
 <arg>${City}</arg>
 <arg>${SearchedCity}</arg>
 </arguments>
-<status status="PASS" starttime="20220809 12:51:20.494" endtime="20220809 12:51:20.494"></status>
+<status status="PASS" starttime="20220809 15:03:51.835" endtime="20220809 15:03:51.835"></status>
 </kw>
-<status status="PASS" starttime="20220809 12:51:16.257" endtime="20220809 12:51:20.495"></status>
+<status status="PASS" starttime="20220809 15:03:47.611" endtime="20220809 15:03:51.836"></status>
 </kw>
 <kw name="Verify TO Search city" library="HomePage">
 <arguments>
@@ -249,8 +249,8 @@
 <arg>${SearchedCity}</arg>
 <arg>${SearchedCity}</arg>
 </arguments>
-<msg timestamp="20220809 12:51:20.496" level="INFO">${SearchedCity} = Bengaluru</msg>
-<status status="PASS" starttime="20220809 12:51:20.496" endtime="20220809 12:51:20.497"></status>
+<msg timestamp="20220809 15:03:51.837" level="INFO">${SearchedCity} = Bengaluru</msg>
+<status status="PASS" starttime="20220809 15:03:51.837" endtime="20220809 15:03:51.838"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -258,32 +258,32 @@
 <arg>${TO_Placeholder_Xpath}</arg>
 <arg>${SearchedCity}</arg>
 </arguments>
-<msg timestamp="20220809 12:51:20.497" level="INFO">Typing text 'Bengaluru' into text field '//input[@placeholder='To']'.</msg>
-<status status="PASS" starttime="20220809 12:51:20.497" endtime="20220809 12:51:20.584"></status>
+<msg timestamp="20220809 15:03:51.839" level="INFO">Typing text 'Bengaluru' into text field '//input[@placeholder='To']'.</msg>
+<status status="PASS" starttime="20220809 15:03:51.839" endtime="20220809 15:03:51.930"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2s</arg>
 </arguments>
-<msg timestamp="20220809 12:51:22.593" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20220809 12:51:20.584" endtime="20220809 12:51:22.593"></status>
+<msg timestamp="20220809 15:03:53.944" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220809 15:03:51.930" endtime="20220809 15:03:53.946"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${CityTOList_Xpath}</arg>
 </arguments>
-<msg timestamp="20220809 12:51:22.599" level="INFO">Clicking element '(//ul[@role='listbox']/li)[1]'.</msg>
-<status status="PASS" starttime="20220809 12:51:22.593" endtime="20220809 12:51:22.671"></status>
+<msg timestamp="20220809 15:03:53.948" level="INFO">Clicking element '(//ul[@role='listbox']/li)[1]'.</msg>
+<status status="PASS" starttime="20220809 15:03:53.947" endtime="20220809 15:03:54.047"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2s</arg>
 </arguments>
-<msg timestamp="20220809 12:51:24.683" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20220809 12:51:22.672" endtime="20220809 12:51:24.683"></status>
+<msg timestamp="20220809 15:03:56.054" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220809 15:03:54.047" endtime="20220809 15:03:56.054"></status>
 </kw>
 <kw name="Get Element Attribute" library="SeleniumLibrary">
 <doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
@@ -294,8 +294,8 @@
 <assign>
 <var>${City}</var>
 </assign>
-<msg timestamp="20220809 12:51:24.704" level="INFO">${City} = Bengaluru</msg>
-<status status="PASS" starttime="20220809 12:51:24.684" endtime="20220809 12:51:24.704"></status>
+<msg timestamp="20220809 15:03:56.081" level="INFO">${City} = Bengaluru</msg>
+<status status="PASS" starttime="20220809 15:03:56.055" endtime="20220809 15:03:56.081"></status>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <doc>Fails if the given objects are unequal.</doc>
@@ -303,9 +303,9 @@
 <arg>${City}</arg>
 <arg>${SearchedCity}</arg>
 </arguments>
-<status status="PASS" starttime="20220809 12:51:24.705" endtime="20220809 12:51:24.705"></status>
+<status status="PASS" starttime="20220809 15:03:56.081" endtime="20220809 15:03:56.082"></status>
 </kw>
-<status status="PASS" starttime="20220809 12:51:20.495" endtime="20220809 12:51:24.705"></status>
+<status status="PASS" starttime="20220809 15:03:51.836" endtime="20220809 15:03:56.082"></status>
 </kw>
 <kw name="DEPARTURE DATE" library="HomePage">
 <arguments>
@@ -318,8 +318,8 @@
 <arg>${InputMonthYear}</arg>
 <arg>${MonthYear}</arg>
 </arguments>
-<msg timestamp="20220809 12:51:24.707" level="INFO">${InputMonthYear} = December 2022</msg>
-<status status="PASS" starttime="20220809 12:51:24.706" endtime="20220809 12:51:24.707"></status>
+<msg timestamp="20220809 15:03:56.083" level="INFO">${InputMonthYear} = December 2022</msg>
+<status status="PASS" starttime="20220809 15:03:56.083" endtime="20220809 15:03:56.162"></status>
 </kw>
 <kw name="${counter} IN RANGE [ 0 | 999 ]" type="for">
 <kw name="${counter} = 0" type="foritem">
@@ -331,8 +331,8 @@
 <assign>
 <var>${MonthYearValue}</var>
 </assign>
-<msg timestamp="20220809 12:51:24.726" level="INFO">${MonthYearValue} = August 2022</msg>
-<status status="PASS" starttime="20220809 12:51:24.708" endtime="20220809 12:51:24.727"></status>
+<msg timestamp="20220809 15:03:56.211" level="INFO">${MonthYearValue} = August 2022</msg>
+<status status="PASS" starttime="20220809 15:03:56.165" endtime="20220809 15:03:56.211"></status>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
@@ -346,29 +346,29 @@
 <arguments>
 <arg>//span[@aria-label='Next Month']</arg>
 </arguments>
-<msg timestamp="20220809 12:51:24.728" level="INFO">Clicking element '//span[@aria-label='Next Month']'.</msg>
-<status status="PASS" starttime="20220809 12:51:24.728" endtime="20220809 12:51:24.796"></status>
+<msg timestamp="20220809 15:03:56.213" level="INFO">Clicking element '//span[@aria-label='Next Month']'.</msg>
+<status status="PASS" starttime="20220809 15:03:56.213" endtime="20220809 15:03:56.282"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>1s</arg>
 </arguments>
-<msg timestamp="20220809 12:51:25.807" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20220809 12:51:24.797" endtime="20220809 12:51:25.807"></status>
+<msg timestamp="20220809 15:03:57.289" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220809 15:03:56.282" endtime="20220809 15:03:57.289"></status>
 </kw>
-<status status="PASS" starttime="20220809 12:51:24.728" endtime="20220809 12:51:25.807"></status>
+<status status="PASS" starttime="20220809 15:03:56.212" endtime="20220809 15:03:57.289"></status>
 </kw>
-<status status="PASS" starttime="20220809 12:51:24.727" endtime="20220809 12:51:25.807"></status>
+<status status="PASS" starttime="20220809 15:03:56.212" endtime="20220809 15:03:57.290"></status>
 </kw>
 <kw name="Exit For Loop If" library="BuiltIn">
 <doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
 <arguments>
 <arg>"${InputMonthYear}"=="${MonthYearValue}"</arg>
 </arguments>
-<status status="PASS" starttime="20220809 12:51:25.807" endtime="20220809 12:51:25.808"></status>
+<status status="PASS" starttime="20220809 15:03:57.290" endtime="20220809 15:03:57.290"></status>
 </kw>
-<status status="PASS" starttime="20220809 12:51:24.708" endtime="20220809 12:51:25.808"></status>
+<status status="PASS" starttime="20220809 15:03:56.164" endtime="20220809 15:03:57.290"></status>
 </kw>
 <kw name="${counter} = 1" type="foritem">
 <kw name="Get Text" library="SeleniumLibrary">
@@ -379,8 +379,8 @@
 <assign>
 <var>${MonthYearValue}</var>
 </assign>
-<msg timestamp="20220809 12:51:25.823" level="INFO">${MonthYearValue} = September 2022</msg>
-<status status="PASS" starttime="20220809 12:51:25.809" endtime="20220809 12:51:25.823"></status>
+<msg timestamp="20220809 15:03:57.303" level="INFO">${MonthYearValue} = September 2022</msg>
+<status status="PASS" starttime="20220809 15:03:57.291" endtime="20220809 15:03:57.303"></status>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
@@ -394,29 +394,29 @@
 <arguments>
 <arg>//span[@aria-label='Next Month']</arg>
 </arguments>
-<msg timestamp="20220809 12:51:25.824" level="INFO">Clicking element '//span[@aria-label='Next Month']'.</msg>
-<status status="PASS" starttime="20220809 12:51:25.824" endtime="20220809 12:51:25.862"></status>
+<msg timestamp="20220809 15:03:57.304" level="INFO">Clicking element '//span[@aria-label='Next Month']'.</msg>
+<status status="PASS" starttime="20220809 15:03:57.304" endtime="20220809 15:03:57.341"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>1s</arg>
 </arguments>
-<msg timestamp="20220809 12:51:26.866" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20220809 12:51:25.863" endtime="20220809 12:51:26.867"></status>
+<msg timestamp="20220809 15:03:58.349" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220809 15:03:57.341" endtime="20220809 15:03:58.349"></status>
 </kw>
-<status status="PASS" starttime="20220809 12:51:25.823" endtime="20220809 12:51:26.868"></status>
+<status status="PASS" starttime="20220809 15:03:57.304" endtime="20220809 15:03:58.350"></status>
 </kw>
-<status status="PASS" starttime="20220809 12:51:25.823" endtime="20220809 12:51:26.871"></status>
+<status status="PASS" starttime="20220809 15:03:57.303" endtime="20220809 15:03:58.351"></status>
 </kw>
 <kw name="Exit For Loop If" library="BuiltIn">
 <doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
 <arguments>
 <arg>"${InputMonthYear}"=="${MonthYearValue}"</arg>
 </arguments>
-<status status="PASS" starttime="20220809 12:51:26.871" endtime="20220809 12:51:26.872"></status>
+<status status="PASS" starttime="20220809 15:03:58.351" endtime="20220809 15:03:58.353"></status>
 </kw>
-<status status="PASS" starttime="20220809 12:51:25.808" endtime="20220809 12:51:26.872"></status>
+<status status="PASS" starttime="20220809 15:03:57.291" endtime="20220809 15:03:58.353"></status>
 </kw>
 <kw name="${counter} = 2" type="foritem">
 <kw name="Get Text" library="SeleniumLibrary">
@@ -427,8 +427,8 @@
 <assign>
 <var>${MonthYearValue}</var>
 </assign>
-<msg timestamp="20220809 12:51:26.886" level="INFO">${MonthYearValue} = October 2022</msg>
-<status status="PASS" starttime="20220809 12:51:26.873" endtime="20220809 12:51:26.887"></status>
+<msg timestamp="20220809 15:03:58.388" level="INFO">${MonthYearValue} = October 2022</msg>
+<status status="PASS" starttime="20220809 15:03:58.354" endtime="20220809 15:03:58.388"></status>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
@@ -442,29 +442,29 @@
 <arguments>
 <arg>//span[@aria-label='Next Month']</arg>
 </arguments>
-<msg timestamp="20220809 12:51:26.888" level="INFO">Clicking element '//span[@aria-label='Next Month']'.</msg>
-<status status="PASS" starttime="20220809 12:51:26.888" endtime="20220809 12:51:26.934"></status>
+<msg timestamp="20220809 15:03:58.389" level="INFO">Clicking element '//span[@aria-label='Next Month']'.</msg>
+<status status="PASS" starttime="20220809 15:03:58.389" endtime="20220809 15:03:58.424"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>1s</arg>
 </arguments>
-<msg timestamp="20220809 12:51:27.946" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20220809 12:51:26.935" endtime="20220809 12:51:27.947"></status>
+<msg timestamp="20220809 15:03:59.428" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220809 15:03:58.424" endtime="20220809 15:03:59.428"></status>
 </kw>
-<status status="PASS" starttime="20220809 12:51:26.888" endtime="20220809 12:51:27.948"></status>
+<status status="PASS" starttime="20220809 15:03:58.389" endtime="20220809 15:03:59.429"></status>
 </kw>
-<status status="PASS" starttime="20220809 12:51:26.887" endtime="20220809 12:51:27.948"></status>
+<status status="PASS" starttime="20220809 15:03:58.388" endtime="20220809 15:03:59.429"></status>
 </kw>
 <kw name="Exit For Loop If" library="BuiltIn">
 <doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
 <arguments>
 <arg>"${InputMonthYear}"=="${MonthYearValue}"</arg>
 </arguments>
-<status status="PASS" starttime="20220809 12:51:27.949" endtime="20220809 12:51:27.951"></status>
+<status status="PASS" starttime="20220809 15:03:59.429" endtime="20220809 15:03:59.430"></status>
 </kw>
-<status status="PASS" starttime="20220809 12:51:26.872" endtime="20220809 12:51:27.951"></status>
+<status status="PASS" starttime="20220809 15:03:58.354" endtime="20220809 15:03:59.430"></status>
 </kw>
 <kw name="${counter} = 3" type="foritem">
 <kw name="Get Text" library="SeleniumLibrary">
@@ -475,8 +475,8 @@
 <assign>
 <var>${MonthYearValue}</var>
 </assign>
-<msg timestamp="20220809 12:51:27.984" level="INFO">${MonthYearValue} = November 2022</msg>
-<status status="PASS" starttime="20220809 12:51:27.952" endtime="20220809 12:51:27.984"></status>
+<msg timestamp="20220809 15:03:59.449" level="INFO">${MonthYearValue} = November 2022</msg>
+<status status="PASS" starttime="20220809 15:03:59.430" endtime="20220809 15:03:59.449"></status>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
@@ -490,29 +490,29 @@
 <arguments>
 <arg>//span[@aria-label='Next Month']</arg>
 </arguments>
-<msg timestamp="20220809 12:51:27.985" level="INFO">Clicking element '//span[@aria-label='Next Month']'.</msg>
-<status status="PASS" starttime="20220809 12:51:27.984" endtime="20220809 12:51:28.024"></status>
+<msg timestamp="20220809 15:03:59.451" level="INFO">Clicking element '//span[@aria-label='Next Month']'.</msg>
+<status status="PASS" starttime="20220809 15:03:59.450" endtime="20220809 15:03:59.495"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>1s</arg>
 </arguments>
-<msg timestamp="20220809 12:51:29.036" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20220809 12:51:28.024" endtime="20220809 12:51:29.036"></status>
+<msg timestamp="20220809 15:04:00.503" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220809 15:03:59.495" endtime="20220809 15:04:00.503"></status>
 </kw>
-<status status="PASS" starttime="20220809 12:51:27.984" endtime="20220809 12:51:29.037"></status>
+<status status="PASS" starttime="20220809 15:03:59.450" endtime="20220809 15:04:00.504"></status>
 </kw>
-<status status="PASS" starttime="20220809 12:51:27.984" endtime="20220809 12:51:29.037"></status>
+<status status="PASS" starttime="20220809 15:03:59.450" endtime="20220809 15:04:00.505"></status>
 </kw>
 <kw name="Exit For Loop If" library="BuiltIn">
 <doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
 <arguments>
 <arg>"${InputMonthYear}"=="${MonthYearValue}"</arg>
 </arguments>
-<status status="PASS" starttime="20220809 12:51:29.038" endtime="20220809 12:51:29.039"></status>
+<status status="PASS" starttime="20220809 15:04:00.505" endtime="20220809 15:04:00.507"></status>
 </kw>
-<status status="PASS" starttime="20220809 12:51:27.951" endtime="20220809 12:51:29.039"></status>
+<status status="PASS" starttime="20220809 15:03:59.430" endtime="20220809 15:04:00.507"></status>
 </kw>
 <kw name="${counter} = 4" type="foritem">
 <kw name="Get Text" library="SeleniumLibrary">
@@ -523,8 +523,8 @@
 <assign>
 <var>${MonthYearValue}</var>
 </assign>
-<msg timestamp="20220809 12:51:29.061" level="INFO">${MonthYearValue} = December 2022</msg>
-<status status="PASS" starttime="20220809 12:51:29.040" endtime="20220809 12:51:29.062"></status>
+<msg timestamp="20220809 15:04:00.538" level="INFO">${MonthYearValue} = December 2022</msg>
+<status status="PASS" starttime="20220809 15:04:00.508" endtime="20220809 15:04:00.538"></status>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
@@ -532,19 +532,19 @@
 <arg>"${InputMonthYear}"!="${MonthYearValue}"</arg>
 <arg>Click NextMOnth</arg>
 </arguments>
-<status status="PASS" starttime="20220809 12:51:29.062" endtime="20220809 12:51:29.063"></status>
+<status status="PASS" starttime="20220809 15:04:00.539" endtime="20220809 15:04:00.539"></status>
 </kw>
 <kw name="Exit For Loop If" library="BuiltIn">
 <doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
 <arguments>
 <arg>"${InputMonthYear}"=="${MonthYearValue}"</arg>
 </arguments>
-<msg timestamp="20220809 12:51:29.064" level="INFO">Exiting for loop altogether.</msg>
-<status status="PASS" starttime="20220809 12:51:29.063" endtime="20220809 12:51:29.064"></status>
+<msg timestamp="20220809 15:04:00.540" level="INFO">Exiting for loop altogether.</msg>
+<status status="PASS" starttime="20220809 15:04:00.539" endtime="20220809 15:04:00.540"></status>
 </kw>
-<status status="PASS" starttime="20220809 12:51:29.039" endtime="20220809 12:51:29.064"></status>
+<status status="PASS" starttime="20220809 15:04:00.508" endtime="20220809 15:04:00.540"></status>
 </kw>
-<status status="PASS" starttime="20220809 12:51:24.707" endtime="20220809 12:51:29.065"></status>
+<status status="PASS" starttime="20220809 15:03:56.163" endtime="20220809 15:04:00.540"></status>
 </kw>
 <kw name="Click Date" library="HomePage">
 <arguments>
@@ -555,18 +555,18 @@
 <arguments>
 <arg>((//div[@class='DayPicker-Month'])[1]//div[@class='DayPicker-Day'])[${Day}]</arg>
 </arguments>
-<msg timestamp="20220809 12:51:29.066" level="INFO">Clicking element '((//div[@class='DayPicker-Month'])[1]//div[@class='DayPicker-Day'])[22]'.</msg>
-<status status="PASS" starttime="20220809 12:51:29.066" endtime="20220809 12:51:29.136"></status>
+<msg timestamp="20220809 15:04:00.541" level="INFO">Clicking element '((//div[@class='DayPicker-Month'])[1]//div[@class='DayPicker-Day'])[22]'.</msg>
+<status status="PASS" starttime="20220809 15:04:00.541" endtime="20220809 15:04:00.612"></status>
 </kw>
-<status status="PASS" starttime="20220809 12:51:29.065" endtime="20220809 12:51:29.137"></status>
+<status status="PASS" starttime="20220809 15:04:00.540" endtime="20220809 15:04:00.612"></status>
 </kw>
-<status status="PASS" starttime="20220809 12:51:24.705" endtime="20220809 12:51:29.137"></status>
+<status status="PASS" starttime="20220809 15:03:56.082" endtime="20220809 15:04:00.613"></status>
 </kw>
 <kw name="Select Travellers" library="HomePage">
 <arguments>
 <arg>1</arg>
-<arg>3</arg>
-<arg>0</arg>
+<arg>1</arg>
+<arg>1</arg>
 </arguments>
 <kw name="Evaluate" library="BuiltIn">
 <doc>Evaluates the given expression in Python and returns the result.</doc>
@@ -576,8 +576,8 @@
 <assign>
 <var>${Children_Travellers}</var>
 </assign>
-<msg timestamp="20220809 12:51:29.138" level="INFO">${Children_Travellers} = 4</msg>
-<status status="PASS" starttime="20220809 12:51:29.138" endtime="20220809 12:51:29.138"></status>
+<msg timestamp="20220809 15:04:00.615" level="INFO">${Children_Travellers} = 2</msg>
+<status status="PASS" starttime="20220809 15:04:00.614" endtime="20220809 15:04:00.615"></status>
 </kw>
 <kw name="Evaluate" library="BuiltIn">
 <doc>Evaluates the given expression in Python and returns the result.</doc>
@@ -587,24 +587,24 @@
 <assign>
 <var>${Infants_Travellers}</var>
 </assign>
-<msg timestamp="20220809 12:51:29.139" level="INFO">${Infants_Travellers} = 1</msg>
-<status status="PASS" starttime="20220809 12:51:29.138" endtime="20220809 12:51:29.139"></status>
+<msg timestamp="20220809 15:04:00.615" level="INFO">${Infants_Travellers} = 2</msg>
+<status status="PASS" starttime="20220809 15:04:00.615" endtime="20220809 15:04:00.615"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${Travellers&amp;Class_Label_Xpath}</arg>
 </arguments>
-<msg timestamp="20220809 12:51:29.140" level="INFO">Clicking element '//div[@data-cy='flightTraveller']'.</msg>
-<status status="PASS" starttime="20220809 12:51:29.139" endtime="20220809 12:51:29.231"></status>
+<msg timestamp="20220809 15:04:00.616" level="INFO">Clicking element '//div[@data-cy='flightTraveller']'.</msg>
+<status status="PASS" starttime="20220809 15:04:00.615" endtime="20220809 15:04:00.696"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>1s</arg>
 </arguments>
-<msg timestamp="20220809 12:51:30.240" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20220809 12:51:29.231" endtime="20220809 12:51:30.240"></status>
+<msg timestamp="20220809 15:04:01.708" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220809 15:04:00.696" endtime="20220809 15:04:01.708"></status>
 </kw>
 <kw name="Catenate" library="BuiltIn">
 <doc>Catenates the given items together and returns the resulted string.</doc>
@@ -616,24 +616,24 @@
 <assign>
 <var>${AdultTraveller_Xpath}</var>
 </assign>
-<msg timestamp="20220809 12:51:30.242" level="INFO">${AdultTraveller_Xpath} = ((//ul[contains(@class,'guestCounter')])[1]//li)[1]</msg>
-<status status="PASS" starttime="20220809 12:51:30.241" endtime="20220809 12:51:30.243"></status>
+<msg timestamp="20220809 15:04:01.710" level="INFO">${AdultTraveller_Xpath} = ((//ul[contains(@class,'guestCounter')])[1]//li)[1]</msg>
+<status status="PASS" starttime="20220809 15:04:01.709" endtime="20220809 15:04:01.710"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${AdultTraveller_Xpath}</arg>
 </arguments>
-<msg timestamp="20220809 12:51:30.245" level="INFO">Clicking element '((//ul[contains(@class,'guestCounter')])[1]//li)[1]'.</msg>
-<status status="PASS" starttime="20220809 12:51:30.244" endtime="20220809 12:51:30.313"></status>
+<msg timestamp="20220809 15:04:01.711" level="INFO">Clicking element '((//ul[contains(@class,'guestCounter')])[1]//li)[1]'.</msg>
+<status status="PASS" starttime="20220809 15:04:01.710" endtime="20220809 15:04:01.790"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>1s</arg>
 </arguments>
-<msg timestamp="20220809 12:51:31.315" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20220809 12:51:30.313" endtime="20220809 12:51:31.316"></status>
+<msg timestamp="20220809 15:04:02.804" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220809 15:04:01.790" endtime="20220809 15:04:02.804"></status>
 </kw>
 <kw name="Catenate" library="BuiltIn">
 <doc>Catenates the given items together and returns the resulted string.</doc>
@@ -645,24 +645,24 @@
 <assign>
 <var>${ChildrenTraveller_Xpath}</var>
 </assign>
-<msg timestamp="20220809 12:51:31.319" level="INFO">${ChildrenTraveller_Xpath} = ((//ul[contains(@class,'guestCounter')])[2]//li)[4]</msg>
-<status status="PASS" starttime="20220809 12:51:31.317" endtime="20220809 12:51:31.319"></status>
+<msg timestamp="20220809 15:04:02.805" level="INFO">${ChildrenTraveller_Xpath} = ((//ul[contains(@class,'guestCounter')])[2]//li)[2]</msg>
+<status status="PASS" starttime="20220809 15:04:02.805" endtime="20220809 15:04:02.805"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${ChildrenTraveller_Xpath}</arg>
 </arguments>
-<msg timestamp="20220809 12:51:31.321" level="INFO">Clicking element '((//ul[contains(@class,'guestCounter')])[2]//li)[4]'.</msg>
-<status status="PASS" starttime="20220809 12:51:31.320" endtime="20220809 12:51:31.395"></status>
+<msg timestamp="20220809 15:04:02.806" level="INFO">Clicking element '((//ul[contains(@class,'guestCounter')])[2]//li)[2]'.</msg>
+<status status="PASS" starttime="20220809 15:04:02.805" endtime="20220809 15:04:02.862"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>1s</arg>
 </arguments>
-<msg timestamp="20220809 12:51:32.408" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20220809 12:51:31.396" endtime="20220809 12:51:32.409"></status>
+<msg timestamp="20220809 15:04:03.866" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220809 15:04:02.862" endtime="20220809 15:04:03.866"></status>
 </kw>
 <kw name="Catenate" library="BuiltIn">
 <doc>Catenates the given items together and returns the resulted string.</doc>
@@ -674,38 +674,38 @@
 <assign>
 <var>${InfantTraveller_Xpath}</var>
 </assign>
-<msg timestamp="20220809 12:51:32.410" level="INFO">${InfantTraveller_Xpath} = ((//ul[contains(@class,'guestCounter')])[3]//li)[1]</msg>
-<status status="PASS" starttime="20220809 12:51:32.409" endtime="20220809 12:51:32.410"></status>
+<msg timestamp="20220809 15:04:03.869" level="INFO">${InfantTraveller_Xpath} = ((//ul[contains(@class,'guestCounter')])[3]//li)[2]</msg>
+<status status="PASS" starttime="20220809 15:04:03.867" endtime="20220809 15:04:03.869"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${InfantTraveller_Xpath}</arg>
 </arguments>
-<msg timestamp="20220809 12:51:32.411" level="INFO">Clicking element '((//ul[contains(@class,'guestCounter')])[3]//li)[1]'.</msg>
-<status status="PASS" starttime="20220809 12:51:32.411" endtime="20220809 12:51:32.471"></status>
+<msg timestamp="20220809 15:04:03.871" level="INFO">Clicking element '((//ul[contains(@class,'guestCounter')])[3]//li)[2]'.</msg>
+<status status="PASS" starttime="20220809 15:04:03.870" endtime="20220809 15:04:03.958"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>1s</arg>
 </arguments>
-<msg timestamp="20220809 12:51:33.488" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20220809 12:51:32.471" endtime="20220809 12:51:33.489"></status>
+<msg timestamp="20220809 15:04:04.962" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220809 15:04:03.958" endtime="20220809 15:04:04.963"></status>
 </kw>
-<status status="PASS" starttime="20220809 12:51:29.137" endtime="20220809 12:51:33.491"></status>
+<status status="PASS" starttime="20220809 15:04:00.613" endtime="20220809 15:04:04.964"></status>
 </kw>
 <kw name="Select Travel Class" library="HomePage">
 <arguments>
-<arg>Business</arg>
+<arg>${TravelClass}</arg>
 </arguments>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>1s</arg>
 </arguments>
-<msg timestamp="20220809 12:51:34.503" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20220809 12:51:33.493" endtime="20220809 12:51:34.504"></status>
+<msg timestamp="20220809 15:04:05.971" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220809 15:04:04.965" endtime="20220809 15:04:05.971"></status>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
@@ -719,36 +719,36 @@
 <arg>"${TravelClass}"=="Business"</arg>
 <arg>Click on Business Travel Class</arg>
 </arguments>
-<kw name="Click on Business Travel Class" library="HomePage">
+<kw name="Click on Premium Economy Travel Class" library="HomePage">
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
-<arg>${BusinessClass_Xpath}</arg>
+<arg>${PremiumEco_Xpath}</arg>
 </arguments>
-<msg timestamp="20220809 12:51:34.508" level="INFO">Clicking element '//li[@data-cy='travelClass-2']'.</msg>
-<status status="PASS" starttime="20220809 12:51:34.507" endtime="20220809 12:51:34.584"></status>
+<msg timestamp="20220809 15:04:05.973" level="INFO">Clicking element '//li[@data-cy='travelClass-1']'.</msg>
+<status status="PASS" starttime="20220809 15:04:05.973" endtime="20220809 15:04:06.051"></status>
 </kw>
-<status status="PASS" starttime="20220809 12:51:34.506" endtime="20220809 12:51:34.584"></status>
+<status status="PASS" starttime="20220809 15:04:05.972" endtime="20220809 15:04:06.052"></status>
 </kw>
-<status status="PASS" starttime="20220809 12:51:34.505" endtime="20220809 12:51:34.584"></status>
+<status status="PASS" starttime="20220809 15:04:05.972" endtime="20220809 15:04:06.052"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2s</arg>
 </arguments>
-<msg timestamp="20220809 12:51:36.594" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20220809 12:51:34.584" endtime="20220809 12:51:36.594"></status>
+<msg timestamp="20220809 15:04:08.055" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220809 15:04:06.053" endtime="20220809 15:04:08.056"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${Travellers&amp;Class_APPLY_Btn_Xpath}</arg>
 </arguments>
-<msg timestamp="20220809 12:51:36.595" level="INFO">Clicking element '//button[text()='APPLY']'.</msg>
-<status status="PASS" starttime="20220809 12:51:36.595" endtime="20220809 12:51:36.685"></status>
+<msg timestamp="20220809 15:04:08.057" level="INFO">Clicking element '//button[text()='APPLY']'.</msg>
+<status status="PASS" starttime="20220809 15:04:08.056" endtime="20220809 15:04:08.124"></status>
 </kw>
-<status status="PASS" starttime="20220809 12:51:33.492" endtime="20220809 12:51:36.685"></status>
+<status status="PASS" starttime="20220809 15:04:04.964" endtime="20220809 15:04:08.124"></status>
 </kw>
 <kw name="Click on SEARCH Button" library="HomePage">
 <kw name="Click Element" library="SeleniumLibrary">
@@ -756,19 +756,147 @@
 <arguments>
 <arg>${SEARCH_Btn_Xpath}</arg>
 </arguments>
-<msg timestamp="20220809 12:51:36.686" level="INFO">Clicking element '//a[text()='Search']'.</msg>
-<status status="PASS" starttime="20220809 12:51:36.686" endtime="20220809 12:51:39.286"></status>
+<msg timestamp="20220809 15:04:08.125" level="INFO">Clicking element '//a[text()='Search']'.</msg>
+<status status="PASS" starttime="20220809 15:04:08.125" endtime="20220809 15:04:10.037"></status>
 </kw>
-<status status="PASS" starttime="20220809 12:51:36.685" endtime="20220809 12:51:39.287"></status>
+<status status="PASS" starttime="20220809 15:04:08.124" endtime="20220809 15:04:10.038"></status>
+</kw>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<arguments>
+<arg>Handle Lock Price&amp;Pay Later! Notification</arg>
+</arguments>
+<kw name="Handle Lock Price&amp;Pay Later! Notification" library="CommonFunctionalities">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20220809 15:04:12.044" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220809 15:04:10.040" endtime="20220809 15:04:12.045"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${LockPrice&amp;PayLater_Xpath}</arg>
+</arguments>
+<msg timestamp="20220809 15:04:12.046" level="INFO">Clicking element '//span[contains(@class,'overlayCrossIcon')]'.</msg>
+<status status="PASS" starttime="20220809 15:04:12.045" endtime="20220809 15:04:12.126"></status>
+</kw>
+<status status="PASS" starttime="20220809 15:04:10.039" endtime="20220809 15:04:12.126"></status>
+</kw>
+<status status="PASS" starttime="20220809 15:04:10.039" endtime="20220809 15:04:12.127"></status>
+</kw>
+<kw name="Validate Title of the Page" library="BookFlightPage">
+<arguments>
+<arg>${FROM_Indian_CITY}</arg>
+<arg>${TO_Indian_CITY}</arg>
+</arguments>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20220809 15:04:15.142" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220809 15:04:12.128" endtime="20220809 15:04:15.144"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>${TitleofBookFlightPage_Xpath}</arg>
+</arguments>
+<assign>
+<var>${TitleofBookFlightPage}</var>
+</assign>
+<msg timestamp="20220809 15:04:15.189" level="INFO">${TitleofBookFlightPage} = Flights from Mumbai to Bengaluru</msg>
+<status status="PASS" starttime="20220809 15:04:15.145" endtime="20220809 15:04:15.189"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${TitleofBookFlightPage}</arg>
+</arguments>
+<msg timestamp="20220809 15:04:15.190" level="INFO">Flights from Mumbai to Bengaluru</msg>
+<status status="PASS" starttime="20220809 15:04:15.190" endtime="20220809 15:04:15.190"></status>
+</kw>
+<kw name="Catenate" library="BuiltIn">
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<arguments>
+<arg>Flights from</arg>
+<arg>${FROM_Indian_CITY}</arg>
+<arg>to</arg>
+<arg>${To_Indian_CITY}</arg>
+</arguments>
+<assign>
+<var>${Req_TitleofBookFlightPage}</var>
+</assign>
+<msg timestamp="20220809 15:04:15.191" level="INFO">${Req_TitleofBookFlightPage} = Flights from Mumbai to Bengaluru</msg>
+<status status="PASS" starttime="20220809 15:04:15.190" endtime="20220809 15:04:15.191"></status>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${Req_TitleofBookFlightPage}</arg>
+<arg>${TitleofBookFlightPage}</arg>
+</arguments>
+<status status="PASS" starttime="20220809 15:04:15.191" endtime="20220809 15:04:15.192"></status>
+</kw>
+<status status="PASS" starttime="20220809 15:04:12.127" endtime="20220809 15:04:15.192"></status>
+</kw>
+<kw name="Click on VIEW PRICES Button" library="BookFlightPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${ViewPricesBtn_Xpath}</arg>
+</arguments>
+<status status="PASS" starttime="20220809 15:04:15.193" endtime="20220809 15:04:15.216"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ViewPricesBtn_Xpath}</arg>
+</arguments>
+<msg timestamp="20220809 15:04:15.216" level="INFO">Clicking element '(//*[contains(@class,'ViewFareBtn')])[1]'.</msg>
+<status status="PASS" starttime="20220809 15:04:15.216" endtime="20220809 15:04:15.329"></status>
+</kw>
+<status status="PASS" starttime="20220809 15:04:15.192" endtime="20220809 15:04:15.330"></status>
+</kw>
+<kw name="Click on BOOK NOW BUTTON" library="BookFlightPage">
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<arguments>
+<arg>${ScrollingPage}</arg>
+</arguments>
+<msg timestamp="20220809 15:04:15.331" level="INFO">Executing JavaScript:
+document.scrollingElement.scrollBy(0,400)
+Without any arguments.</msg>
+<status status="PASS" starttime="20220809 15:04:15.330" endtime="20220809 15:04:15.356"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${BookNowBtn_Xpath}</arg>
+</arguments>
+<status status="PASS" starttime="20220809 15:04:15.356" endtime="20220809 15:04:15.640"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${BookNowBtn_Xpath}</arg>
+</arguments>
+<msg timestamp="20220809 15:04:15.641" level="INFO">Clicking element '(//button[contains(@class,'buttonPrimary')])[1]'.</msg>
+<status status="PASS" starttime="20220809 15:04:15.641" endtime="20220809 15:04:15.750"></status>
+</kw>
+<status status="PASS" starttime="20220809 15:04:15.330" endtime="20220809 15:04:15.751"></status>
 </kw>
 <doc>This Testcase will Verify that User is able to book Flights after giving required inputs.(FOR ONEWAY TRIP)</doc>
-<status status="PASS" starttime="20220809 12:50:59.341" endtime="20220809 12:51:39.287" critical="yes"></status>
+<status status="PASS" starttime="20220809 15:03:30.008" endtime="20220809 15:04:15.751" critical="yes"></status>
 </test>
-<status status="PASS" starttime="20220809 12:50:58.071" endtime="20220809 12:51:39.289"></status>
+<status status="PASS" starttime="20220809 15:03:28.795" endtime="20220809 15:04:15.752"></status>
 </suite>
-<status status="PASS" starttime="20220809 12:50:58.068" endtime="20220809 12:51:39.294"></status>
+<status status="PASS" starttime="20220809 15:03:28.792" endtime="20220809 15:04:15.754"></status>
 </suite>
-<status status="PASS" starttime="20220809 12:50:58.049" endtime="20220809 12:51:39.297"></status>
+<status status="PASS" starttime="20220809 15:03:28.773" endtime="20220809 15:04:15.756"></status>
 </suite>
 <statistics>
 <total>

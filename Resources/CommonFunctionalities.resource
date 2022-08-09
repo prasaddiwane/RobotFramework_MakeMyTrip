@@ -14,7 +14,9 @@ ${URL}    https://www.makemytrip.com/
 ${BROWSER}    chrome
 ${NotificationFrame_Xpath}    //iframe[contains(@title,'notification')]
 ${Close_Notification_Xpath}    //a[@class='close']   
-${LangCardClose_Xpath}    //span[@class='langCardClose']     
+${LangCardClose_Xpath}    //span[@class='langCardClose']
+${LockPrice&PayLater_Xpath}    //span[contains(@class,'overlayCrossIcon')]    
+${ScrollingPage}    document.scrollingElement.scrollBy(0,400) 
 
 
 
@@ -37,7 +39,14 @@ Handle Notification
     
     
 Handle Language Notification
-    Click Element    ${LangCardClose_Xpath}    
+    Click Element    ${LangCardClose_Xpath}   
+    
+Handle Lock Price&Pay Later! Notification
+    Sleep    2s    
+    Click Element    ${LockPrice&PayLater_Xpath}  
+    
+ 
+      
     
 
     

@@ -8,12 +8,14 @@ Library    Excel.Files
 Library    DatabaseLibrary
 Resource    ../Resources/CommonFunctionalities.resource
 Resource    ../Resources/HomePage.resource
+Resource    ../Resources/BookFlightPage.resource
 
 *** Variables ***
 ${FROM_Indian_CITY}    Mumbai
 ${TO_Indian_CITY}    Bengaluru
 ${Departure_MonthYear}    December 2022
 ${Departure_Date}    22
+${TravelClass}    Premium
 
 *** Test Cases ***
 
@@ -146,12 +148,20 @@ MMT-FLIGHTS-TC-016
    
     DEPARTURE DATE    ${Departure_MonthYear}    ${Departure_Date}
     
-    Select Travellers    1    3    0
+    Select Travellers    1    1    1
     
     #Select options from (Economy,Premium,Business)
-    Select Travel Class    Business
+    Select Travel Class    ${TravelClass}
     
     HomePage.Click on SEARCH Button
+    
+    Run Keyword And Ignore Error    Handle Lock Price&Pay Later! Notification    
+    
+    Validate Title of the Page    ${FROM_Indian_CITY}    ${TO_Indian_CITY}
+    
+    Click on VIEW PRICES Button
+    
+    Click on BOOK NOW BUTTON
     
     
 
