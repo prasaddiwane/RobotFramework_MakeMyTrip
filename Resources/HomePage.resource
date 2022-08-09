@@ -17,7 +17,7 @@ ${MultiCityLabel_Xpath}    //li[@data-cy='mulitiCityTrip']
 ${OneWayRadioBtn_Xpath}    (//span[contains(@class,'tabsCircle')])[1]
 ${RoundTripRadioBtn_Xpath}    (//span[contains(@class,'tabsCircle')])[2]
 ${MutliCityRadioBtn_Xpath}    (//span[contains(@class,'tabsCircle')])[3]
-${ReturnDefaultText_Xpath}    //p[@data-cy='returnDefaultText']\
+${ReturnDefaultText_Xpath}    //p[@data-cy='returnDefaultText']
 
 ${FROM_Label_Xpath}    (//span[contains(@class,'lbl_input latoBold')])[1]
 ${FROM_City_Xpath}    //*[@id='fromCity']
@@ -31,6 +31,18 @@ ${TO_Placeholder_Xpath}    //input[@placeholder='To']
 ${CityFromList_Xpath}    (//ul[@role='listbox']/li)[1]
 ${CityTOList_Xpath}    (//ul[@role='listbox']/li)[1]    
 
+#Travellers 
+${Travellers&Class_Label_Xpath}    //div[@data-cy='flightTraveller']
+${Travellers&Class_APPLY_Btn_Xpath}    //button[text()='APPLY']
+${AdultTraveller_Xpath}    ((//ul[contains(@class,'guestCounter')])[1]//li)
+${ChildrenTraveller_Xpath}    ((//ul[contains(@class,'guestCounter')])[2]//li)
+${InfantTraveller_Xpath}    ((//ul[contains(@class,'guestCounter')])[3]//li)
+#Travel Classes
+${Economy_Xpath}    //li[@data-cy='travelClass-0']
+${PremiumEco_Xpath}    //li[@data-cy='travelClass-1']
+${BusinessClass_Xpath}    //li[@data-cy='travelClass-2']
+
+${SEARCH_Btn_Xpath}    //a[text()='Search']
 *** Keywords ***
 
 
@@ -151,10 +163,12 @@ Click NextMOnth
     
 Click Date
     [Arguments]    ${Day}
+    
     Click Element    ((//div[@class='DayPicker-Month'])[1]//div[@class='DayPicker-Day'])[${Day}]           
     
 DEPARTURE DATE
     [Arguments]    ${MonthYear}    ${Day}
+   
     Set Local Variable    ${InputMonthYear}    ${MonthYear}
     
     FOR    ${counter}    IN RANGE    0    999
@@ -163,6 +177,58 @@ DEPARTURE DATE
          Exit For Loop If    "${InputMonthYear}"=="${MonthYearValue}"
     END  
     Click Date    ${Day} 
+    
+Select Travellers
+    [Arguments]    ${Adult_Travellers}    ${Children_Travellers}    ${Infants_Travellers}
+    
+    ${Children_Travellers}    Evaluate    ${Children_Travellers}+1    
+    ${Infants_Travellers}    Evaluate    ${Infants_Travellers}+1   
+     
+    Click Element    ${Travellers&Class_Label_Xpath}    
+    Sleep    1s
+    
+    ${AdultTraveller_Xpath}    Catenate    SEPARATOR=    ${AdultTraveller_Xpath}    [${Adult_Travellers}]             
+    Click Element    ${AdultTraveller_Xpath} 
+    Sleep    1s  
+    
+    ${ChildrenTraveller_Xpath}    Catenate    SEPARATOR=    ${ChildrenTraveller_Xpath}    [${Children_Travellers}]              
+    Click Element    ${ChildrenTraveller_Xpath}          
+    Sleep    1s  
+    
+    ${InfantTraveller_Xpath}    Catenate    SEPARATOR=    ${InfantTraveller_Xpath}    [${Infants_Travellers}]        
+    Click Element    ${InfantTraveller_Xpath}   
+    Sleep    1s
+    
+Click on Economy Travel Class
+    
+    Click Element    ${Economy_Xpath}    
+    
+Click on Premium Economy Travel Class
+    
+    Click Element    ${PremiumEco_Xpath}    
+    
+Click on Business Travel Class
+   
+    Click Element    ${BusinessClass_Xpath}    
+    
+Select Travel Class
+    [Arguments]    ${TravelClass}
+    
+    Sleep    1s    
+    Run Keyword If    "${TravelClass}"=="Economy"    Click on Economy Travel Class    ELSE IF    "${TravelClass}"=="Premium"
+    ...    Click on Premium Economy Travel Class    ELSE IF    "${TravelClass}"=="Business"    Click on Business Travel Class  
+    
+    Sleep    2s    
+    Click Element    ${Travellers&Class_APPLY_Btn_Xpath}                         
+    
+
+Click on SEARCH Button
+    Click Element    ${SEARCH_Btn_Xpath}    
+     
+    
+
+
+    
     
 
     

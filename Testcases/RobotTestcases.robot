@@ -146,6 +146,14 @@ MMT-FLIGHTS-TC-016
    
     DEPARTURE DATE    ${Departure_MonthYear}    ${Departure_Date}
     
+    Select Travellers    1    3    0
+    
+    #Select options from (Economy,Premium,Business)
+    Select Travel Class    Business
+    
+    HomePage.Click on SEARCH Button
+    
+    
 
 TC_DEMO
    
