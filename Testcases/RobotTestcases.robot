@@ -9,12 +9,16 @@ Library    DatabaseLibrary
 Resource    ../Resources/CommonFunctionalities.resource
 Resource    ../Resources/HomePage.resource
 Resource    ../Resources/BookFlightPage.resource
+Resource    ../Resources/CompleteBookingPage.resource
 
 *** Variables ***
 ${FROM_Indian_CITY}    Mumbai
-${TO_Indian_CITY}    Bengaluru
+${TO_Indian_CITY}    Delhi
 ${Departure_MonthYear}    December 2022
 ${Departure_Date}    22
+${AdultTravellers}    3
+${ChildTravellers}    1
+${InfantsTravellers}    0
 ${TravelClass}    Premium
 
 *** Test Cases ***
@@ -148,7 +152,7 @@ MMT-FLIGHTS-TC-016
    
     DEPARTURE DATE    ${Departure_MonthYear}    ${Departure_Date}
     
-    Select Travellers    1    1    1
+    Select Travellers    ${AdultTravellers}    ${ChildTravellers}    ${InfantsTravellers}
     
     #Select options from (Economy,Premium,Business)
     Select Travel Class    ${TravelClass}
@@ -157,11 +161,15 @@ MMT-FLIGHTS-TC-016
     
     Run Keyword And Ignore Error    Handle Lock Price&Pay Later! Notification    
     
-    Validate Title of the Page    ${FROM_Indian_CITY}    ${TO_Indian_CITY}
+    #Validate Title of the Page    ${FROM_Indian_CITY}    ${TO_Indian_CITY}
     
     Click on VIEW PRICES Button
     
     Click on BOOK NOW BUTTON
+    
+    Validate Title of Complete your booking Page
+    
+    Add Adult Travellers Details    ${AdultTravellers}    
     
     
 
@@ -170,7 +178,9 @@ TC_DEMO
     #${Departure_Date}    Convert To Integer    ${Departure_Date}      
     Log    ${Departure_Date}        
     ${Departure_Date}    Evaluate    ${Departure_Date}+1    
-    Log    ${Departure_Date}    
+    Log    ${Departure_Date}  
+    
+
     
     
     

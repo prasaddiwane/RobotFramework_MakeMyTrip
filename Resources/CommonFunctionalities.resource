@@ -45,6 +45,11 @@ Handle Lock Price&Pay Later! Notification
     Sleep    2s    
     Click Element    ${LockPrice&PayLater_Xpath}  
     
+Scroll the Page
+    [Arguments]    ${ScrollPercentage}
+    Execute Javascript    document.scrollingElement.scrollBy(0,${ScrollPercentage})    
+    
+    
  
       
     

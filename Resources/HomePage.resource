@@ -24,7 +24,8 @@ ${FROM_City_Xpath}    //*[@id='fromCity']
 ${TO_City_Xpath}    //*[@id='toCity']
 ${TO_Label_Xpath}    (//span[contains(@class,'lbl_input latoBold')])[2]
 ${DEPARTURE_Label_Xpath}    (//span[contains(@class,'lbl_input latoBold')])[3]
-${RETURN_Label_Xpath}    (//span[contains(@class,'lbl_input latoBold')])[4]        
+${RETURN_Label_Xpath}    (//span[contains(@class,'lbl_input latoBold')])[4] 
+${MonthYearValue_Xpath}    (//div[@class='DayPicker-Caption'])[1]       
 ${TRAVELLERS&CLASS_Xpath}    (//span[contains(@class,'lbl_input latoBold')])[5]
 ${FROM_Placeholder_Xpath}    //input[@placeholder='From']
 ${TO_Placeholder_Xpath}    //input[@placeholder='To']
@@ -156,8 +157,8 @@ Verify TO Search city
     Click Element    ${CityTOList_Xpath} 
     sleep    2s
     ${City}    Get Element Attribute    ${TO_City_Xpath}    value
-    Should Be Equal    ${City}    ${SearchedCity}
-    
+    #Should Be Equal    ${City}    ${SearchedCity}
+    Should Contain    ${City}    ${SearchedCity}    ignore_case=True    
 Click NextMOnth
     Click Element    //span[@aria-label='Next Month']  
     Sleep    1s    
@@ -173,7 +174,8 @@ DEPARTURE DATE
     Set Local Variable    ${InputMonthYear}    ${MonthYear}
     
     FOR    ${counter}    IN RANGE    0    999
-         ${MonthYearValue}    Get Text    (//div[@class='DayPicker-Caption'])[1]
+         Wait Until Element Is Visible    ${MonthYearValue_Xpath}    
+         ${MonthYearValue}    Get Text    ${MonthYearValue_Xpath}
          Run Keyword If    "${InputMonthYear}"!="${MonthYearValue}"    Click NextMOnth    
          Exit For Loop If    "${InputMonthYear}"=="${MonthYearValue}"
     END  
