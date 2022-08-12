@@ -14,6 +14,7 @@ Resource    CommonFunctionalities.resource
 ${TitleofBookFlightPage_Xpath}    //p[contains(@class,'journey-title')]
 ${ViewPricesBtn_Xpath}    (//*[contains(@class,'ViewFareBtn')])[1]
 ${BookNowBtn_Xpath}    (//button[contains(@class,'buttonPrimary')])[1]
+${FlightLayoverInfo_Xpath}    (//*[@class='flightsLayoverInfo'])[1]
 
 
 
@@ -34,6 +35,10 @@ Click on VIEW PRICES Button
     Wait Until Element Is Visible    ${ViewPricesBtn_Xpath}
     Click Element    ${ViewPricesBtn_Xpath} 
     
+    ${FlightLayoverInfo}    Get Text    ${FlightLayoverInfo_Xpath}
+    ${FlightLayoverInfo}    Split String    ${FlightLayoverInfo}    
+    log    ${FlightLayoverInfo}[0]
+    Set Global Variable    ${FlightLayoverInfo}    
 
 Click on BOOK NOW BUTTON
     

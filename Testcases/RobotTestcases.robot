@@ -6,6 +6,7 @@ Library    OperatingSystem
 Library    AutoItLibrary 
 Library    Excel.Files
 Library    DatabaseLibrary
+Library    String    
 Resource    ../Resources/CommonFunctionalities.resource
 Resource    ../Resources/HomePage.resource
 Resource    ../Resources/BookFlightPage.resource
@@ -17,9 +18,9 @@ ${TO_Indian_CITY}    Delhi
 ${Departure_MonthYear}    December 2022
 ${Departure_Date}    22
 ${AdultTravellers}    3
-${ChildTravellers}    1
-${InfantsTravellers}    0
-${TravelClass}    Premium
+${ChildTravellers}    3
+${InfantsTravellers}    3
+${TravelClass}    Economy
 
 *** Test Cases ***
 
@@ -169,7 +170,29 @@ MMT-FLIGHTS-TC-016
     
     Validate Title of Complete your booking Page
     
-    Add Adult Travellers Details    ${AdultTravellers}    
+    Add Adult Travellers Details    ${AdultTravellers}   
+    
+    Verify Child Travellers are added and Add Child Travellers Details    ${ChildTravellers} 
+    
+    Verify Infant Travellers are added and Add Infant Travellers Details    ${InfantsTravellers}  
+    
+    Input Booking Details-Mobile No,Email
+    
+    Click on CONTINUE Button
+    
+    Accept the Necessary Changes 
+    
+    Click on CONTINUE Button  
+    
+    Click on CONFIRM button
+    
+    Accept Great Value Seats
+    
+    Click on PROCEED TO PAY Button
+    
+    Drag And Drop    locator    target
+    
+    
     
     
 
@@ -181,7 +204,10 @@ TC_DEMO
     Log    ${Departure_Date}  
     
 
-    
+TC_DEMO_1
+        
+    ${rndstr}    Generate Random String    length=5    chars=[LETTERS]
+    Log    ${rndstr} 
     
     
     
