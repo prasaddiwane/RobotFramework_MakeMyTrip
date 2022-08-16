@@ -43,6 +43,9 @@ ${Economy_Xpath}    //li[@data-cy='travelClass-0']
 ${PremiumEco_Xpath}    //li[@data-cy='travelClass-1']
 ${BusinessClass_Xpath}    //li[@data-cy='travelClass-2']
 
+
+
+
 ${SEARCH_Btn_Xpath}    //a[text()='Search']
 
 *** Keywords ***

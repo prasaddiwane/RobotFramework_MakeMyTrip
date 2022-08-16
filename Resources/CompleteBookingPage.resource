@@ -26,6 +26,7 @@ ${ConfirmBtn_Xpath}    //button[text()='CONFIRM']
 
 ${GreatValueSeatsLabel_Xpath}    //p[text()='We have picked great-value seats for you!']
 ${YesPleaseBtn_Xpath}    //button[text()='Yes, Please']
+${ReviewAddOn_Btn}    //button[@class='reviewAddonsBtn']
 ${ProceedToPayBtn}    //button[text()='Proceed to pay']    
 
 *** Keywords ***
@@ -134,9 +135,9 @@ Input Booking Details-Mobile No,Email
     Input Text    ${Email_Xpath}    prasad@gmail.com 
     Click Element    //div[@class='emailId']       
     
-    ${FlightLayoverInfo}    Get Variable Value    ${FlightLayoverInfo}              
-    Log    ${FlightLayoverInfo}[0]    
+       
 Click on CONTINUE Button
+    Sleep    3s    
     Wait Until Element Is Visible    ${ContinueBtn_Xpath}    
     Click Element    ${ContinueBtn_Xpath}   
      
@@ -151,10 +152,59 @@ Click on CONFIRM button
     Wait Until Element Is Visible    ${ConfirmBtn_Xpath}    
     Click Element    ${ConfirmBtn_Xpath}
     
+Select Seats for Non Stop Flight
+    
+    Accept Great Value Seats
+    
+    Click on CONTINUE Button
+    
+    Click on CONTINUE Button
+    
+    Review Add ons
+    
+Select Seats for Connecting Flights
+    [Arguments]    ${No_Of_Flight}     
+    
+    FOR    ${counter}    IN RANGE    0    ${No_Of_Flight}  
+        
+    Accept Great Value Seats
+    
+    Click on CONTINUE Button
+    
+    Accept Great Value Seats
+    
+    Click on CONTINUE Button
+    
+    Click on CONTINUE Button
+    
+    Click on CONTINUE Button
+    
+    Review Add ons          
+  
+    END  
+    
+    
+Verify No of Flights and Select The Seat
+    
+    ${FlightLayoverInfo}    Get Variable Value    ${FlightLayoverInfo}              
+    Log    ${FlightLayoverInfo}[0]     
+    Set Global Variable    ${No_Of_Flight}    ${FlightLayoverInfo}[0]
+    
+    Run Keyword If    "${No_Of_Flight}"=="Non"    Select Seats for Non Stop Flight    ELSE    Select Seats for Connecting Flights    ${No_Of_Flight}        
+    
+    
+
+
+    
 Accept Great Value Seats 
     
     #Wait Until Element Is Visible    ${GreatValueSeatsLabel_Xpath}  
+    Sleep    5s    
     Click Element    ${YesPleaseBtn_Xpath}  
+    
+Review Add ons
+    Sleep    3s    
+    Click Element    ${ReviewAddOn_Btn}    
     
 Click on PROCEED TO PAY Button    
     

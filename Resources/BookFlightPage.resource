@@ -27,7 +27,14 @@ Validate Title of the Page
     Log    ${TitleofBookFlightPage} 
   
     ${Req_TitleofBookFlightPage}    Catenate    Flights from    ${FROM_Indian_CITY}    to    ${To_Indian_CITY}
-    Should Be Equal As Strings    ${Req_TitleofBookFlightPage}    ${TitleofBookFlightPage}        
+    Should Be Equal As Strings    ${Req_TitleofBookFlightPage}    ${TitleofBookFlightPage}   
+    
+Get Flights Layover Info
+    
+    Wait Until Element Is Visible    ${FlightLayoverInfo_Xpath}    
+    ${No_Stops}    Get Text    ${FlightLayoverInfo_Xpath}        
+    Set Global Variable    ${No_Stops}    
+         
     
 
 Click on VIEW PRICES Button

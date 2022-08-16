@@ -13,13 +13,13 @@ Resource    ../Resources/BookFlightPage.resource
 Resource    ../Resources/CompleteBookingPage.resource
 
 *** Variables ***
-${FROM_Indian_CITY}    Mumbai
-${TO_Indian_CITY}    Delhi
+${FROM_Indian_CITY}    Pune
+${TO_Indian_CITY}    Chennai
 ${Departure_MonthYear}    December 2022
-${Departure_Date}    22
-${AdultTravellers}    3
-${ChildTravellers}    3
-${InfantsTravellers}    3
+${Departure_Date}    20
+${AdultTravellers}    2
+${ChildTravellers}    0
+${InfantsTravellers}    0
 ${TravelClass}    Economy
 
 *** Test Cases ***
@@ -160,9 +160,11 @@ MMT-FLIGHTS-TC-016
     
     HomePage.Click on SEARCH Button
     
-    Run Keyword And Ignore Error    Handle Lock Price&Pay Later! Notification    
+    Run Keyword And Ignore Error    Handle Lock Price&Pay Later! Notification      
     
     #Validate Title of the Page    ${FROM_Indian_CITY}    ${TO_Indian_CITY}
+    
+    Get Flights Layover Info
     
     Click on VIEW PRICES Button
     
@@ -186,11 +188,11 @@ MMT-FLIGHTS-TC-016
     
     Click on CONFIRM button
     
-    Accept Great Value Seats
+    Verify No of Flights and Select The Seat
     
     Click on PROCEED TO PAY Button
     
-    Drag And Drop    locator    target
+     
     
     
     
