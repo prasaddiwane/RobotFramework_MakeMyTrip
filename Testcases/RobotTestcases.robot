@@ -13,13 +13,13 @@ Resource    ../Resources/BookFlightPage.resource
 Resource    ../Resources/CompleteBookingPage.resource
 
 *** Variables ***
-${FROM_Indian_CITY}    Pune
+${FROM_Indian_CITY}    Mumbai
 ${TO_Indian_CITY}    Chennai
-${Departure_MonthYear}    December 2022
-${Departure_Date}    20
+${Departure_MonthYear}    November 2022
+${Departure_Date}    04
 ${AdultTravellers}    2
-${ChildTravellers}    0
-${InfantsTravellers}    0
+${ChildTravellers}    2
+${InfantsTravellers}    2
 ${TravelClass}    Economy
 
 *** Test Cases ***
@@ -176,7 +176,7 @@ MMT-FLIGHTS-TC-016
     
     Verify Child Travellers are added and Add Child Travellers Details    ${ChildTravellers} 
     
-    Verify Infant Travellers are added and Add Infant Travellers Details    ${InfantsTravellers}  
+    Verify Infant Travellers are added and Add Infant Travellers Details    ${InfantsTravellers}    ${ChildTravellers}  
     
     Input Booking Details-Mobile No,Email
     
@@ -188,7 +188,7 @@ MMT-FLIGHTS-TC-016
     
     Click on CONFIRM button
     
-    Verify No of Flights and Select The Seat
+    Run Keyword And Ignore Error    Verify No of Flights and Select The Seat
     
     Click on PROCEED TO PAY Button
     

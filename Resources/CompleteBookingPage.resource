@@ -14,6 +14,7 @@ Resource    BookFlightPage.resource
 *** Variables ***
 ${Exp_TitleofCompleteYourBookingPage}    Complete your booking
 ${TitleofCompleteYourBooking_XPath}    //h2[contains(@class,'headerTitle')]
+${SecureMyTripRadioBtn_Xpath}    //*[contains(text(),'Yes, Secure my trip.')]
 ${AddNewAdultBtn_Xpath}    //button[contains(text(),'ADD NEW ADULT')]
 ${AddNewChildBtn_Xpath}    //button[contains(text(),'ADD NEW CHILD')]
 ${AddNewInfantBtn_Xpath}    //button[contains(text(),'ADD NEW INFANT')]
@@ -39,10 +40,12 @@ Validate Title of Complete your booking Page
     ${TitleofCompleteYourBooking}    Get Text    ${TitleofCompleteYourBooking_XPath}
     Should Be Equal As Strings    ${Exp_TitleofCompleteYourBookingPage}    ${TitleofCompleteYourBooking}
     
+    Click Element    ${SecureMyTripRadioBtn_Xpath}    
+    
 Add Adult Travellers Details
     [Arguments]    ${AdultTravellers} 
     
-    Scroll the Page    1000   
+    Scroll the Page    500   
     Set Local Variable    ${count}    1 
     
     FOR    ${counter}    IN RANGE    0    ${AdultTravellers}
@@ -59,7 +62,29 @@ Add Adult Travellers Details
          
     
     END  
+
+Add Child Travellers Date of Birth
+    [Arguments]    ${count}    
     
+    #Select Date 
+	Click Element    ((//div[@class='adultItemSelect'])[${count}]//div[@class='selectInner'])[1]    
+	Press Keys    None    01
+	#Sleep    02    
+	Press Keys    None    TAB
+	
+    #Select Month
+    Click Element    ((//div[@class='adultItemSelect'])[${count}]//div[@class='selectInner'])[2]    
+	Press Keys    None    Jan
+	#Sleep    02    
+	Press Keys    None    TAB
+	
+    #Select Year
+    Click Element    ((//div[@class='adultItemSelect'])[${count}]//div[@class='selectInner'])[3]    
+	Press Keys    None    2022
+	#Sleep    02    
+	Press Keys    None    TAB 
+    
+
 Add Child Travellers Details
     [Arguments]    ${ChildTravellers}
     Set Local Variable    ${count}    1
@@ -72,7 +97,10 @@ Add Child Travellers Details
     ${rndstr}    Generate Random String    length=6    chars=[LETTERS]
     Input Text    (//div[@id='wrapper_CHILD']//input[@placeholder='First & Middle Name'][1])[${count}]    ${rndstr}   
     
-    Click Element    (//div[@id='wrapper_CHILD']//div[@class='selectTab '])[${count}]//label[1]        
+    Click Element    (//div[@id='wrapper_CHILD']//div[@class='selectTab '])[${count}]//label[1] 
+    
+    #Run Keyword And Ignore Error    Add Child Travellers Date of Birth    ${count}    
+       
     ${count}    Evaluate    ${count}+1
     
     END
@@ -85,8 +113,12 @@ Verify Child Travellers are added and Add Child Travellers Details
 
 
 Add Infants Travellers Details
-    [Arguments]    ${InfantsTravellers}
+    [Arguments]    ${InfantsTravellers}    ${ChildTravellers}
+    
     Set Local Variable    ${count}    1
+    #${I_count}    Evaluate    ${ChildTravellers}+1    
+    
+    Log    ${ChildTravellers}    
     
     FOR    ${counter}    IN RANGE    0    ${InfantsTravellers} 
         
@@ -99,7 +131,7 @@ Add Infants Travellers Details
     Click Element    (//div[@id='wrapper_INFANT']//div[@class='selectTab '])[${count}]//label[1]    
     
 	#Select Date 
-	Click Element    ((//div[@class='adultItemSelect'])[${count}]//div[@class='selectInner'])[1]
+	Click Element    ((//div[@class='adultItemSelect'])[${count}]//div[@class='selectInner'])[1]    
 	Press Keys    None    01
 	#Sleep    02    
 	Press Keys    None    TAB
@@ -124,9 +156,9 @@ Add Infants Travellers Details
     
     
 Verify Infant Travellers are added and Add Infant Travellers Details
-    [Arguments]    ${InfantsTravellers}
+    [Arguments]    ${InfantsTravellers}    ${ChildTravellers}
     
-    Run Keyword If    "${InfantsTravellers}"=="0"    Log    No Infants Travellers are added    ELSE    Add Infants Travellers Details    ${InfantsTravellers}                
+    Run Keyword If    "${InfantsTravellers}"=="0"    Log    No Infants Travellers are added    ELSE    Add Infants Travellers Details    ${InfantsTravellers}    ${ChildTravellers}                
      
 Input Booking Details-Mobile No,Email
     
@@ -153,7 +185,7 @@ Click on CONFIRM button
     Click Element    ${ConfirmBtn_Xpath}
     
 Select Seats for Non Stop Flight
-    
+    Sleep    3s
     Accept Great Value Seats
     
     Click on CONTINUE Button
@@ -198,12 +230,12 @@ Verify No of Flights and Select The Seat
     
 Accept Great Value Seats 
     
-    #Wait Until Element Is Visible    ${GreatValueSeatsLabel_Xpath}  
-    Sleep    5s    
+    Wait Until Element Is Visible    ${YesPleaseBtn_Xpath}  
+    Sleep    2s    
     Click Element    ${YesPleaseBtn_Xpath}  
     
 Review Add ons
-    Sleep    3s    
+    Sleep    2s    
     Click Element    ${ReviewAddOn_Btn}    
     
 Click on PROCEED TO PAY Button    
