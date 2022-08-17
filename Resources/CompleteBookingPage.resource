@@ -50,7 +50,7 @@ Add Adult Travellers Details
     
     FOR    ${counter}    IN RANGE    0    ${AdultTravellers}
     
-           
+         sleep    3s  
          Wait Until Element Is Visible    ${AddNewAdultBtn_Xpath}
          Click Element    ${AddNewAdultBtn_Xpath}    
          
@@ -186,11 +186,11 @@ Click on CONFIRM button
     
 Select Seats for Non Stop Flight
     Sleep    3s
-    Accept Great Value Seats
+    Run Keyword And Ignore Error    Accept Great Value Seats
     
-    Click on CONTINUE Button
+    Run Keyword And Ignore Error    Click on CONTINUE Button
     
-    Click on CONTINUE Button
+    Run Keyword And Ignore Error    Click on CONTINUE Button
     
     Review Add ons
     
@@ -199,17 +199,17 @@ Select Seats for Connecting Flights
     
     FOR    ${counter}    IN RANGE    0    ${No_Of_Flight}  
         
-    Accept Great Value Seats
+    Run Keyword And Ignore Error    Accept Great Value Seats
     
-    Click on CONTINUE Button
+    Run Keyword And Ignore Error    Click on CONTINUE Button
     
-    Accept Great Value Seats
+    Run Keyword And Ignore Error    Accept Great Value Seats
     
-    Click on CONTINUE Button
+    Run Keyword And Ignore Error    Click on CONTINUE Button
     
-    Click on CONTINUE Button
+    Run Keyword And Ignore Error    Click on CONTINUE Button
     
-    Click on CONTINUE Button
+    Run Keyword And Ignore Error    Click on CONTINUE Button
     
     Review Add ons          
   

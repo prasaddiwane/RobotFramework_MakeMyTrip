@@ -11,12 +11,12 @@ Resource    ../Resources/CommonFunctionalities.resource
 Resource    ../Resources/HomePage.resource
 Resource    ../Resources/BookFlightPage.resource
 Resource    ../Resources/CompleteBookingPage.resource
-
+Resource    ../Resources/PaymentOptionsPage.resource
 *** Variables ***
 ${FROM_Indian_CITY}    Mumbai
-${TO_Indian_CITY}    Chennai
+${TO_Indian_CITY}    Kochi
 ${Departure_MonthYear}    November 2022
-${Departure_Date}    04
+${Departure_Date}    09
 ${AdultTravellers}    2
 ${ChildTravellers}    2
 ${InfantsTravellers}    2
@@ -188,9 +188,13 @@ MMT-FLIGHTS-TC-016
     
     Click on CONFIRM button
     
-    Run Keyword And Ignore Error    Verify No of Flights and Select The Seat
+    Verify No of Flights and Select The Seat
     
     Click on PROCEED TO PAY Button
+    
+    Validate Title of Payment Options Page
+    
+    Validate Payment Options are Present or not
     
      
     
