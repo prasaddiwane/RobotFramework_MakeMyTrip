@@ -15,6 +15,7 @@ Resource    BookFlightPage.resource
 ${Exp_TitleofCompleteYourBookingPage}    Complete your booking
 ${TitleofCompleteYourBooking_XPath}    //h2[contains(@class,'headerTitle')]
 ${SecureMyTripRadioBtn_Xpath}    //*[contains(text(),'Yes, Secure my trip.')]
+${TravellerDetailsHeader_Xpath}    //h2[text()='Traveller Details']
 ${AddNewAdultBtn_Xpath}    //button[contains(text(),'ADD NEW ADULT')]
 ${AddNewChildBtn_Xpath}    //button[contains(text(),'ADD NEW CHILD')]
 ${AddNewInfantBtn_Xpath}    //button[contains(text(),'ADD NEW INFANT')]
@@ -45,7 +46,8 @@ Validate Title of Complete your booking Page
 Add Adult Travellers Details
     [Arguments]    ${AdultTravellers} 
     
-    Scroll the Page    500   
+    #Scroll the Page    500   
+    Scroll Element Into View    ${TravellerDetailsHeader_Xpath}
     Set Local Variable    ${count}    1 
     
     FOR    ${counter}    IN RANGE    0    ${AdultTravellers}

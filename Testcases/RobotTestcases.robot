@@ -13,10 +13,20 @@ Resource    ../Resources/BookFlightPage.resource
 Resource    ../Resources/CompleteBookingPage.resource
 Resource    ../Resources/PaymentOptionsPage.resource
 *** Variables ***
+
+#***************************************************TestData******************************************************************
+
 ${FROM_Indian_CITY}    Mumbai
 ${TO_Indian_CITY}    Kochi
-${Departure_MonthYear}    November 2022
-${Departure_Date}    09
+
+#Departure MonthYear should be in Format= "<Month><Year>"
+${Departure_MonthYear}    August2022
+${Departure_Date}    28
+
+#Departure MonthYear should be in Format= "<Month><Year>"
+${Return_MonthYear}    November2022    
+${Return_Date}    12
+
 ${AdultTravellers}    2
 ${ChildTravellers}    2
 ${InfantsTravellers}    2
@@ -202,12 +212,42 @@ MMT-FLIGHTS-TC-016_BookOneWayFlight
     
     
 
-TC_DEMO
+TC_17_BookRoundTripFlight
+    [Documentation]    This Testcase will verify that User is able to book round trip flight or not.
+    
+    Log    ${TEST_NAME}  
+    
+    Open MakemyTrip Application
+    
+    Run Keyword And Ignore Error    Handle Notification
+    
+    Handle Language Notification
+    
+    Click on ROUNDTRIP Label
+    
+    #Click on FROM Button
+    Verify FROM Placeholder
+    
+    #Input FROM City
+    Verify FROM Search city    ${FROM_Indian_CITY}
+    
+    #Input TO CIty
+    Verify TO Search city    ${TO_Indian_CITY}
    
-    #${Departure_Date}    Convert To Integer    ${Departure_Date}      
-    Log    ${Departure_Date}        
-    ${Departure_Date}    Evaluate    ${Departure_Date}+1    
-    Log    ${Departure_Date}  
+    DEPARTURE DATE    ${Departure_MonthYear}    ${Departure_Date}
+    
+    RETURN DATE    ${Return_MonthYear}    ${Return_Date}
+    
+
+
+tc_current
+  ${date}    Get Current Date    date_format=%d-%m-%Y %H:%M        
+  Log    ${date}      
+  ${date}    Convert Date    ${date}    date_format=%d-%m-%Y %H:%M
+  Log    ${date}    
+      
+   
+       
     
 
     

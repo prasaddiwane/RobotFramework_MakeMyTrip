@@ -69,6 +69,8 @@ Click on ONEWAY label
     Click Element    ${OneWayLabel_Xpath}
     ${OneWayTrip}    Get Text    ${SelectedRadioButton_Xpath}   
     Should Be Equal    ${OneWayTrip}    ONEWAY
+       
+   
     
 Verify RETURN default Message for ONEWAY
     Click Element    ${RoundTripRadioBtn_Xpath}
@@ -169,12 +171,19 @@ Click NextMOnth
 Click Date
     [Arguments]    ${Day}
     
-    Click Element    ((//div[@class='DayPicker-Month'])[1]//div[@class='DayPicker-Day'])[${Day}]           
+    Click Element    ((//div[@class='DayPicker-Month'])[1]//div[@class='DayPicker-Day'])[${Day}]    
+    
+PickDateForCurrentMonth
+    Log    HI    
+           
     
 DEPARTURE DATE
     [Arguments]    ${MonthYear}    ${Day}
    
     Set Local Variable    ${InputMonthYear}    ${MonthYear}
+    ${MonthYearValue}    Get Text    ${MonthYearValue_Xpath}
+    
+    Run Keyword If    "${InputMonthYear}"=="${MonthYearValue}"    PickDateForCurrentMonth    
     
     FOR    ${counter}    IN RANGE    0    999
          Wait Until Element Is Visible    ${MonthYearValue_Xpath}    
@@ -183,6 +192,21 @@ DEPARTURE DATE
          Exit For Loop If    "${InputMonthYear}"=="${MonthYearValue}"
     END  
     Click Date    ${Day} 
+    
+RETURN DATE
+    [Arguments]    ${MonthYear}    ${Day}    
+    
+    Set Local Variable    ${InputMonthYear}    ${MonthYear}
+    Sleep    2s    
+    FOR    ${counter}    IN RANGE    0    999
+         Wait Until Element Is Visible    ${MonthYearValue_Xpath}    
+         ${MonthYearValue}    Get Text    ${MonthYearValue_Xpath}
+         Run Keyword If    "${InputMonthYear}"!="${MonthYearValue}"    Click NextMOnth    
+         Exit For Loop If    "${InputMonthYear}"=="${MonthYearValue}"
+    END  
+    Click Date    ${Day} 
+    
+    
     
 Select Travellers
     [Arguments]    ${Adult_Travellers}    ${Children_Travellers}    ${Infants_Travellers}
