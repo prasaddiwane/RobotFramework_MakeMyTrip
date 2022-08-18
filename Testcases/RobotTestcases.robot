@@ -128,7 +128,7 @@ MMT-FLIGHTS-TC-015
     Verify FROM Search city    Mumbai
     
 
-MMT-FLIGHTS-TC-016
+MMT-FLIGHTS-TC-016_BookOneWayFlight
     [Documentation]
     ...    This Testcase will Verify that User is able to book Flights after giving required inputs.(FOR ONEWAY TRIP)
     
@@ -210,11 +210,6 @@ TC_DEMO
     Log    ${Departure_Date}  
     
 
-TC_DEMO_1
-        
-    ${rndstr}    Generate Random String    length=5    chars=[LETTERS]
-    Log    ${rndstr} 
-    
     
     
 
