@@ -28,7 +28,7 @@ ${GooglePayHeader_Xpath}    //div[@class='payment__options__tab']//*[text()='Goo
 
 Validate Title of Payment Options Page
     
-    Wait Until Element Is Visible    ${PaymentOptionsHeader_XPath}    
+    Wait Until Element Is Visible    ${PaymentOptionsHeader_XPath}    timeout=10s    
     Element Should Be Visible    ${PaymentOptionsHeader_XPath}
     
 Validate Payment Options are Present or not

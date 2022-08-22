@@ -171,7 +171,7 @@ Click NextMOnth
 Click Date
     [Arguments]    ${Day}
     
-    Click Element    ((//div[@class='DayPicker-Month'])[1]//div[@class='DayPicker-Day'])[${Day}]    
+    Click Element    ((//div[@class='DayPicker-Month'])[1])//*[text()='${Day}']    
     
 PickDateForCurrentMonth
     Log    HI    
